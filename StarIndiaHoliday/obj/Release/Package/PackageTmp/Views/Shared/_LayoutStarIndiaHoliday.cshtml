@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>starindiaholiday</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="~/Content/Starindiaholiday/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Starindiaholiday/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Starindiaholiday/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/Starindiaholiday/css/menu.css" />
+    <link rel="stylesheet" href="~/Content/Starindiaholiday/carousal/animate.css" />
+    <script type="text/javascript" src="~/Content/Starindiaholiday/js/jquery-1.9.0.min.js"></script>    
+    <link href="~/Content/Starindiaholiday/css/slide.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="~/Content/Starindiaholiday/carousal/owl.carousel.css">
+    <link rel="stylesheet" href="~/Content/Starindiaholiday/carousal/owl.theme.css">
+
+    <script src="/Scripts/jquery-1.7.1.min.js"></script>
+        <script src="/Scripts/jquery.validate.min.js"></script>
+        <script src="/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+    <style>
+        .input-validation-error {
+            background-color: #B0E0E6 !important;
+            border: solid 1px Blue !important;
+        }
+    </style>
+    @*button loading display *@
+    <style>
+        .buttonload {
+            background-color: #ee6e1f; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 12px 24px; /* Some padding */
+            font-size: 16px; /* Set a font-size */
+        }
+
+        /* Add a right margin to each icon */
+        
+    </style>
+    <link rel="stylesheet" href="@Url.Content("~/Content/Starindiaholiday/carousal/owl.carousel.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Starindiaholiday/carousal/owl.theme.css")">
+
+</head>
+
+<body>
+    <!--<div class="pay-now">
+    <a href="https://www.payumoney.com/pay/#/merchant/AB0D4E57BF5B2BE5F07638C4F8FFB440" title="Online Pay" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </div>-->
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <div class="top-mail">
+                        <ul>
+                            <li>Welcome to Star India Holiday</li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <ul class="log-reg flt-rt top-contact">
+                        <li> <a href=" tel: 0120- 4205148"><i class="fa fa-phone"></i> &nbsp;  0120- 4205148</a></li>
+                        <li><a href=""> <i class="fa fa-facebook"> </i> </a> </li>
+                        <li> <a href="" target="_blank"><i class="fa fa-linkedin"></i> </a> </li>
+                        <li> <a href=""><i class="fa fa-twitter"> </i></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--top-header close-->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="logo-wrapper">
+                    <div class="cell-view wow fadeInLeft" data-wow-delay="0.3s"> <a id="logo" href="/"><img src="@Url.Content("~/Content/Starindiaholiday/images/logo.png")" alt="" /></a> </div>
+                </div>
+                <div class="header-right">
+                    <nav id="cssmenu">
+                        <div id="head-mobile">&nbsp;</div>
+                        <div class="button"></div>
+                        <ul class="" style="display: block;">
+
+                            <li class=@(ViewBag.active=="index"?"active2":"")><a href="/" class=@(ViewBag.active=="index"?"active":"triangle-down")>Home</a></li>
+
+                            <li class=@(ViewBag.active=="aboutus"?"active2":"")><a href="/aboutus" class=@(ViewBag.active=="aboutus"?"active":"triangle-down")>About Us</a> </li>
+
+                            <li class=@(ViewBag.active=="tour"? "active2" : "")>
+                                <a href="#" class=@(ViewBag.active=="tour"?"active":"triangle-down")>Tour Packages</a>
+                                @{Html.RenderAction("_PartialTourPackageMenu");}
+
+
+                            </li>
+                            <li class=@(ViewBag.active== "hotPackage" ? "active2":"")>
+                                <a href="#" class=@(ViewBag.active== "hotPackage" ? "active":"triangle-down")>Hot Packages</a>
+
+                                @{Html.RenderAction("_PartialHotPackageMenu");}
+                            </li>
+                            @*<li>
+                                <a href="#" class="triangle-down">Hot Packages</a>
+                                <ul style="display: block;">
+                                    <li><a href="#">Banglore Hot Tour</a></li>
+                                    <li><a href="#">Kasmir Hot Tour</a>  </li>
+
+                                </ul>
+                            </li>*@
+                            <li><a href="/contactus" class="triangle-down">Enquiry Now</a> </li>
+
+                            <li class=@(ViewBag.active=="contactus"?"active2":"")><a href="/contactus" class=@(ViewBag.active=="contactus"?"active":"triangle-down")>Contact Us</a></li>
+
+                            <li><a href="/contactus"><i class="fa fa-search"></i></a></li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+
+
+
+    @RenderBody()
+    <div class="footer-outer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="foot-1">
+                    <div class="col-md-3 col-sm-12">
+                        <h3>Contact Us</h3>
+                        <div class="first-border">
+                            <div class="foot-contact">
+                                <ul>
+                                    @*<li>We are ipsum dolor sit amet aeeatt consectetuer adipiscing</li>*@
+                                    <li class="hm">Star India Holiday , B-86 : Block B Sector 60 Noida UP 201301</li>
+                                    <li class="phn">+91  0120- 4205148</li>
+                                    <li class="mail"><a href="support@starindiaholiday.com">support@starindiaholiday.com</a></li>
+                                </ul>
+                                <div class="social-link">
+                                    <h4>Follow us</h4>
+                                    <ul>
+                                        <li> <i class="fa fa-facebook" aria-hidden="true"></i></li>
+                                        <li> <i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                        <li> <i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12"> 
+                        <h3>Quick Links</h3> 
+                        <div class="first-border">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/aboutus">About us</a></li> 
+                                <li><a href="">Destinations</a></li>
+                              <li><a href="/TermsCondtion">Terms & Conditions</a></li>
+                                <li><a href="/contactus">Contact</a></li>
+                                <li><a href="/Disclaimer">Disclaimer</a></li>
+                               
+                            </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <h3>Destination</h3>
+                        <div class="first-border2">
+                            <ul>
+                                <li><img src="@Url.Content("~/Content/Starindiaholiday/images/foot-img-1.jpg")"></li>
+                                <li><img src="@Url.Content("~/Content/Starindiaholiday/images/foot-img-2.jpg")"></li>
+                                <li><img src="@Url.Content("~/Content/Starindiaholiday/images/foot-img-3.jpg")"></li>
+                                <li><img src="@Url.Content("~/Content/Starindiaholiday/images/foot-img-4.jpg")"></li>
+
+                                <li> &nbsp;</li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="clear2"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <h3 class="h">Opening Hours</h3>
+                        <ul>
+                            <li><a href="">Monday: <span>10.30 - 06.30</span></a></li>
+                            <li><a href="">Tuesday: <span>10.30 - 06.30</span></a></li>
+                            <li><a href="">Wednesday:<span>10.30 - 06.30</span></a></li>
+                            <li><a href="">Thursday:<span>10.30 - 06.30</span></a></li>
+                            <li><a href="">Friday:<span>10.30 - 06.30</span></a></li>
+                            <li><a href="">Saturday:<span>10.30 - 06.30</span></a></li>
+                            <li><a href="">Sunday:<span>close</span></a></li>
+
+                        </ul>
+                    </div>
+                    <div class="clear-both"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-2">
+        <div class="container-fluid">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="powered-by">
+                    <p>© Copyright <span>Starindiaholiday 2020.</span> All Right Reserved.   </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="aks-logo"><a href="" title="lead2world" target="_blank"> <img src="@Url.Content("~/Content/Starindiaholiday/images/aks-logo.png")" alt=""></a> </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-top"><a href="#">&nbsp;</a></div>
+
+
+    <script src="@Url.Content("~/Content/Starindiaholiday/js/wow.min.js")"></script>
+    <script>
+$('.carousel-main').owlCarousel({
+	items: 3,
+	loop: true,
+	autoplay: true,
+	autoplayTimeout: 1500,
+	margin: 10,
+	nav: true,
+	dots: false,
+	navText: ['<span class="fas fa-chevron-left fa-2x"></span>','<span class="fas fa-chevron-right fa-2x"></span>'],
+})
+    </script>
+    <script>
+        var wow = new WOW(
+            {
+                boxClass: 'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset: 100,          // distance to the element when triggering the animation (default is 0)
+                mobile: true,       // trigger animations on mobile devices (default is true)
+                live: true,       // act on asynchronously loaded content (default is true)
+                callback: function (box) {
+                    // the callback is fired every time an animation is started
+                    // the argument that is passed in is the DOM node being animated
+                }
+            }
+        );
+        wow.init();
+    </script>
+
+    <script type="text/javascript">
+
+$(window).load(function() {
+
+    $("#flexiselDemo3").flexisel({
+        visibleItems: 4,
+        itemsToScroll: 1,
+        autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        },
+		 responsiveBreakpoints: {
+            portrait: {
+                changePoint:480,
+                visibleItems: 1,
+                itemsToScroll: 1
+            },
+            landscape: {
+                changePoint:640,
+                visibleItems: 2,
+                itemsToScroll: 2
+            },
+            tablet: {
+                changePoint:768,
+                visibleItems: 3,
+                itemsToScroll: 3
+            },
+
+        },
+        loaded: function(object) {
+            console.log('Slider loaded...');
+        },
+        before: function(object){
+            console.log('Before transition...');
+        },
+        after: function(object) {
+            console.log('After transition...');
+        },
+        resize: function(object){
+            console.log('After resize...');
+        }
+
+    });
+
+	$("#flexiselDemo4").flexisel({
+        visibleItems: 4,
+        itemsToScroll: 1,
+        autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        },
+		responsiveBreakpoints: {
+            portrait: {
+                changePoint:480,
+                visibleItems: 1,
+                itemsToScroll: 1
+            },
+            landscape: {
+                changePoint:640,
+                visibleItems: 2,
+                itemsToScroll: 2
+            },
+            tablet: {
+                changePoint:768,
+                visibleItems: 3,
+                itemsToScroll: 3
+            },
+
+        },
+        loaded: function(object) {
+            console.log('Slider loaded...');
+        },
+        before: function(object){
+            console.log('Before transition...');
+        },
+        after: function(object) {
+            console.log('After transition...');
+        },
+        resize: function(object){
+            console.log('After resize...');
+        }
+
+    });
+	$("#flexiselDemo5").flexisel({
+        visibleItems: 2,
+        itemsToScroll: 0,
+        autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        }, responsiveBreakpoints: {
+            portrait: {
+                changePoint:480,
+                visibleItems: 1,
+                itemsToScroll: 0
+            },
+            landscape: {
+                changePoint:640,
+                visibleItems: 1,
+                itemsToScroll: 1
+            },
+            tablet: {
+                changePoint:768,
+                visibleItems: 2,
+                itemsToScroll: 1
+            },
+
+        },
+        loaded: function(object) {
+            console.log('Slider loaded...');
+        },
+        before: function(object){
+            console.log('Before transition...');
+        },
+        after: function(object) {
+            console.log('After transition...');
+        },
+        resize: function(object){
+            console.log('After resize...');
+        }
+
+    });
+
+});
+    </script>
+    <script src="@Url.Content("~/Content/Starindiaholiday/js/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content(".~/Content/Starindiaholiday/js/script.js")"></script>
+    <script src="@Url.Content("~/Content/Starindiaholiday/js/main.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/Starindiaholiday/js/jquery1.7.1.min.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/Content/Starindiaholiday/js/jquery.flexisel.js")"></script>
+
+    <script src="@Url.Content("~/Content/Starindiaholiday/carousal/owl.carousel.min.js")"></script>
+    <script src="@Url.Content("~/Content/Starindiaholiday/carousal/main.js")"></script>
+
+
+
+    <script language="javascript" type="text/javascript" src="@Url.Content("~/Content/Starindiaholiday/js/scroll.js")"></script>
+    <script src="@Url.Content("~/Content/Starindiaholiday/js/bootstrap.min.js")" type="text/javascript"></script>
+    <script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+    </script>
+    <script src="@Url.Content("~/Content/Starindiaholiday/js/navAccordion.min.js")"></script>
+    <script>
+		jQuery(document).ready(function(){
+
+			//Accordion Nav
+			jQuery('.mainNav').navAccordion({
+				expandButtonText: '<i class="fa fa-plus"></i>',  //Text inside of buttons can be HTML
+				collapseButtonText: '<i class="fa fa-minus"></i>'
+			},
+			function(){
+				console.log('Callback')
+			});
+
+		});
+    </script>
+</body>
+</html>
+

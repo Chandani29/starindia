@@ -1,0 +1,294 @@
+﻿@model StarIndiaHoliday.Models.Tour
+@{
+    ViewBag.Title = "tour";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        if ($("#price").val() == "0") {
+            $("#price").val("");
+        }
+        $("#ddlCategory").change(function () {
+            if ($("#ddlCategory").val() == "") {
+                $("#ddlDestination").empty();
+                $("#ddlDestination").append($('<option></option>').val("").html("Select Destination"));
+            }
+            else {
+                $.ajax({
+                    type: "POST",
+                    url: "/Admin/bindDestinationFromJson",
+                    data: '{categoryName: "' + $("#ddlCategory").val() + '"}',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (subcategories) {
+
+                        $("#ddlDestination").empty();
+                        $("#ddlDestination").append($('<option></option>').val("").html("Select Destination"));
+                        $.each(subcategories, function (i, subcategory) {
+                            $("#ddlDestination").append('<option value="' + subcategory.Value + '">' + subcategory.Text + '</option>');
+                        }); // here we are adding option for States
+                        /////////////////Change
+                        bindTable($("#ddlCategory").val(), "");
+                        /////////////////Change
+                    },
+                    failure: function (response) {
+
+                    }
+                });
+            }
+            return false;
+        });
+
+        $("#ddlDestination").change(function () {
+
+            bindTable($("#ddlCategory").val(), $("#ddlDestination").val())
+
+        });
+
+        function bindTable(catid, destination_id) {
+            $.ajax({
+                url: '/Admin/_PartialTour',
+                cache: false,
+                type: "POST",
+                data: { categoryName: catid, destinationid: destination_id, state: 'onChange' },
+                success: function (data) {
+                    $("#wrap4").html(data);
+                },
+                error: function () {
+                    alert("failed");
+                }
+
+            });
+        }
+
+    });
+</script>
+
+<div id="wrap">
+    <div class="clear" style="height:5px;"></div>
+@using (Html.BeginForm("tour", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationSummary(true)
+    <div id="wrap2">
+        <h1>Add Tour</h1>
+        <span style="color:green;">@ViewBag.Success @TempData["msg"]</span>
+        <span style="color:red;">@ViewBag.Error</span>
+        <br>
+
+        <div class="form-raw">
+            <div class="form-name">Category</div>
+            <div class="form-txtfld">
+                @{
+                    var categorylistItems = new List<System.Web.UI.WebControls.ListItem>();
+                    categorylistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "Select Category", Value = "" });
+                    categorylistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "Domestic", Value = "Domestic" });
+                    categorylistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "International", Value = "International" });
+                }
+                @Html.DropDownListFor(Model => Model.categoryName, new SelectList(categorylistItems, "Value", "Text"), new { id = "ddlCategory" })
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="form-raw">
+            <div class="form-name">Destination</div>
+            <div class="form-txtfld">
+                @if (ViewBag.destinationName != null)
+                {
+                    @Html.DropDownListFor(model => model.destinationid,
+   new SelectList(ViewBag.destinationName as System.Collections.IEnumerable, "id", "destination"), "Select Destination",
+   new { id = "ddlDestination" })
+                }
+                else
+                {
+
+                    var destinationlistItems = new List<System.Web.UI.WebControls.ListItem>();
+                    destinationlistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "Select Destination", Value = "" });
+
+                    @Html.DropDownListFor(model => model.destinationid, new SelectList(destinationlistItems), new { id = "ddlDestination" })
+                }
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-raw">
+            <div class="form-name">Tour Name</div>
+            <div class="form-txtfld">
+               @Html.TextBoxFor(model => model.tourName)
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-raw">
+            <div class="form-name">Short Description</div>
+            <div class="form-txtfld">
+                @*<textarea style="width:400px; height:150px;"></textarea>*@
+                @*<strong>Maximum 60 Charactor Allowed</strong><br>*@
+                @Html.TextAreaFor(model => model.shortDescription, new
+           { @style = "width:400px; height:150px;", @maxlength = 60 })
+                <strong>Maximum 60 Charactor Allowed</strong>
+                <br>
+
+
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div>
+
+        </div>
+
+        <div class="form-raw">
+            <div class="form-name">Facility</div>
+            <div class="form-txtfld" style="width: 511px;">
+
+                @{string[] logo = { "fa fa-bed", "fa fa-car", "fa fa-cutlery", "fa fa-eye", "fa fa-ship", "fa fa-cc-visa", "fa fa-plane", "fa fa-user", "fa fa-glass" };
+                    for (var i = 0; i < Model.objCheck.Count; i++)
+                    {
+                        <div class="facility">
+                            @Html.CheckBoxFor(model => model.objCheck[i].Checked)
+                            <i class="@logo[i]" aria-hidden="true">&nbsp;<span>@Html.DisplayFor(model => model.objCheck[i].Name)</span></i>
+                            @Html.HiddenFor(model => model.objCheck[i].Name)
+                            @Html.HiddenFor(model => model.objCheck[i].Id)
+                        </div>
+                    }
+                }
+                @*<div class="facility">
+                    <input type="checkbox">
+                    <i class="fa fa-bed" aria-hidden="true">&nbsp;<span>Hotels</span></i>
+                </div>
+                <div class="facility">
+                    <input type="checkbox">
+                    <i class="fa fa-car" aria-hidden="true">&nbsp;<span>Transfer</span></i>
+                </div>
+
+                <div class="facility">
+                    <input type="checkbox">
+                    <i class="fa fa-cutlery" aria-hidden="true">&nbsp;<span>Meals</span></i>
+                </div>
+                <div class="facility">
+                    <input type="checkbox">
+                    <i class="fa fa-eye" aria-hidden="true">&nbsp;<span>Sightseeing</span></i>
+                </div>
+                <div class="facility">
+                    <input type="checkbox">
+                    <i class="fa fa-ship" aria-hidden="true">&nbsp;<span>Houseboat</span></i>
+                </div>
+                <div class="facility">
+                    <input type="checkbox">
+                    <i class="fa fa-cc-visa" aria-hidden="true">&nbsp;<span>Visa</span></i>
+                </div>
+                <div class="facility">
+                    <input type="checkbox">
+                    <i class="fa fa-plane" aria-hidden="true">&nbsp;<span>Flight</span></i>
+                </div>
+                <div class="facility">
+                    <input type="checkbox">
+                    <i class="fa fa-user" aria-hidden="true">&nbsp;<span>Guide</span></i>
+                </div>
+                <div class="facility">
+                    <input type="checkbox">
+                    <i class="fa fa-glass" aria-hidden="true">&nbsp;<span>Drinks</span></i>
+                </div>*@
+
+
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-raw">
+            <div class="form-name">Price</div>
+            <div class="form-txtfld">
+                @Html.TextBoxFor(model => model.price, new { @id = "price", @class = "allownumericwithoutdecimal", @maxlength = "6" })
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="form-raw">
+            <div class="form-name">Tour Image</div>
+            <div class="form-txtfld">
+                @*<input type="file">*@
+
+                <input type="hidden" id="imageName" name="imageName" value="@ViewBag.imageName" />
+                @if (ViewBag.btn == "Update")
+                {
+                    <input type="file" multiple="multiple" name="files[0]" id="files_1" accept=".jpg,.jpeg,.gif,.png" />@ViewBag.imageName
+
+
+                }
+                else
+                {
+
+                    @Html.TextBoxFor(Model => Model.file1, new { type = "file", id = "file1", accept = ".jpg,.jpeg,.gif,.png" })
+
+                }
+                <div class="form-name"> Image Size ( Width=280px, Height=351px ) (Tour listing page)</div>
+
+                @*<div class="clear"></div>
+                <strong style="margin: 5px 0px">Image Size ( width: 350px, height: 351px )</strong>*@<div class="clear"></div>
+                <strong style="margin: 5px 0px"></strong>
+
+            </div>
+        </div>
+
+
+        <div class="clear"></div>
+        <div class="form-raw">
+            <div class="form-name">Status</div>
+            <div class="form-txtfld">
+                @Html.CheckBoxFor(model => model.status, new { @checked = "checked" })
+                (Active/Inactive)
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="form-raw">
+            <div class="form-name">Set as home page</div>
+            <div class="form-txtfld">
+                @Html.CheckBoxFor(model => model.setAsHomePage)
+                (Yes/No)
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="form-raw">
+            <div class="form-name">&nbsp;</div>
+            <div class="form-txtfld">
+                @*<input type="button" class="btn" value="Submit">*@
+                @if (ViewBag.btn == "Update")
+                {
+                    <input type="submit" value="Update" class="btn" name="cmd">
+                }
+                else
+                {
+                    <input type="submit" value="Submit" class="btn" name="cmd" />
+                }
+            </div>
+        </div>
+    </div>
+}
+    <div class="clear">&nbsp;</div>
+</div>
+<div id="wrap3">
+    <div id="wrap4">
+        @{Html.RenderAction("_PartialTour");}
+    </div>
+    <div class="clear">&nbsp;</div>
+</div>
+<div class="clear"></div>
+
+<script>
+    //Event  that accept only numeric start
+    $(".allownumericwithoutdecimal").on("keypress keyup blur", function (event) {
+
+        $(this).val($(this).val().replace(/[^\d].+/, ""));
+        if (event.which == 13) {
+            return;
+        }
+        if ((event.which < 48 || event.which > 57)) {
+            event.preventDefault();
+        }
+    });
+    //Event that accept only numeric end
+</script>
+

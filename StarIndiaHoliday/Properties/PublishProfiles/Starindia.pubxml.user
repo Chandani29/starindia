@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Chandani\Desktop\Publish\StartHolidayindia\11-02-2020\2</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/23/2012 15:23:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/StarIndiaHoliday.dll">
+      <publishTime>02/11/2020 15:17:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="Content/Admin/css/jquery-1.11.1.min.js">
+      <publishTime>12/10/2019 10:59:06</publishTime>
+    </File>
+    <File Include="Content/Admin/css/pop-up.css">
+      <publishTime>12/10/2019 10:59:10</publishTime>
+    </File>
+    <File Include="Content/Admin/css/style.css">
+      <publishTime>12/11/2019 06:54:44</publishTime>
+    </File>
+    <File Include="Content/Admin/css/style_invoice.css">
+      <publishTime>12/10/2019 10:59:12</publishTime>
+    </File>
+    <File Include="Content/Admin/images/add-more.png">
+      <publishTime>12/10/2019 10:59:12</publishTime>
+    </File>
+    <File Include="Content/Admin/images/akslogo.jpg">
+      <publishTime>12/10/2019 10:59:12</publishTime>
+    </File>
+    <File Include="Content/Admin/images/bag-3.jpg">
+      <publishTime>12/10/2019 10:59:12</publishTime>
+    </File>
+    <File Include="Content/Admin/images/brand-logo.jpg">
+      <publishTime>12/10/2019 10:59:12</publishTime>
+    </File>
+    <File Include="Content/Admin/images/buttton-bg-on.jpg">
+      <publishTime>12/10/2019 10:59:12</publishTime>
+    </File>
+    <File Include="Content/Admin/images/buttton-bg.jpg">
+      <publishTime>12/10/2019 10:59:12</publishTime>
+    </File>
+    <File Include="Content/Admin/images/error.png">
+      <publishTime>12/10/2019 10:59:12</publishTime>
+    </File>
+    <File Include="Content/Admin/images/footr-bor.jpg">
+      <publishTime>12/10/2019 10:59:14</publishTime>
+    </File>
+    <File Include="Content/Admin/images/hdr-rep.png">
+      <publishTime>12/10/2019 10:59:14</publishTime>
+    </File>
+    <File Include="Content/Admin/images/icon-bin.jpg">
+      <publishTime>12/10/2019 10:59:14</publishTime>
+    </File>
+    <File Include="Content/Admin/images/lock-image.png">
+      <publishTime>12/10/2019 10:59:14</publishTime>
+    </File>
+    <File Include="Content/Admin/images/logo.jpg">
+      <publishTime>12/10/2019 10:59:14</publishTime>
+    </File>
+    <File Include="Content/Admin/images/logo.png">
+      <publishTime>12/10/2019 10:59:16</publishTime>
+    </File>
+    <File Include="Content/Admin/images/logout.png">
+      <publishTime>12/10/2019 10:59:16</publishTime>
+    </File>
+    <File Include="Content/Admin/images/mainlock.png">
+      <publishTime>12/10/2019 10:59:16</publishTime>
+    </File>
+    <File Include="Content/Admin/images/pattern.jpg">
+      <publishTime>12/10/2019 10:59:16</publishTime>
+    </File>
+    <File Include="Content/Admin/images/pattern.png">
+      <publishTime>12/10/2019 10:59:22</publishTime>
+    </File>
+    <File Include="Content/Admin/images/phoneicon.jpg">
+      <publishTime>12/10/2019 10:59:22</publishTime>
+    </File>
+    <File Include="Content/Admin/images/seaerch-bg.jpg">
+      <publishTime>12/10/2019 10:59:22</publishTime>
+    </File>
+    <File Include="Content/Admin/images/search-rep.png">
+      <publishTime>12/10/2019 10:59:24</publishTime>
+    </File>
+    <File Include="Content/Admin/images/testi-img.jpg">
+      <publishTime>12/10/2019 10:59:24</publishTime>
+    </File>
+    <File Include="Content/Admin/images/Thumbs.db">
+      <publishTime>12/10/2019 10:59:28</publishTime>
+    </File>
+    <File Include="Content/Admin/menu/quickmenu0.css">
+      <publishTime>12/10/2019 10:59:28</publishTime>
+    </File>
+    <File Include="Content/Admin/menu/quickmenu0.js">
+      <publishTime>12/10/2019 10:59:28</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/carousal/jquery-1.11.3.min.js">
+      <publishTime>12/07/2019 13:20:52</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/carousal/main.js">
+      <publishTime>02/08/2020 17:27:56</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/carousal/owl.carousel.css">
+      <publishTime>12/07/2019 13:20:52</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/carousal/owl.carousel.min.js">
+      <publishTime>12/07/2019 16:00:32</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/carousal/owl.theme.css">
+      <publishTime>12/07/2019 16:08:40</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/bootstrap.min.css">
+      <publishTime>12/07/2019 13:21:18</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/font-awesome.min.css">
+      <publishTime>12/07/2019 13:21:18</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/index.php">
+      <publishTime>12/07/2019 13:21:18</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/menu-old.css">
+      <publishTime>12/07/2019 13:21:20</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/menu.css">
+      <publishTime>12/07/2019 13:21:18</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/nav.css">
+      <publishTime>12/07/2019 13:21:20</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/owl.carousel.min.css">
+      <publishTime>12/07/2019 16:03:52</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/owl.theme.default.min.css">
+      <publishTime>12/07/2019 13:21:20</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/slide.css">
+      <publishTime>12/07/2019 13:21:20</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/css/style.css">
+      <publishTime>02/11/2020 14:12:52</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/baroquescript-webfont.woff">
+      <publishTime>12/18/2016 01:28:56</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/baroquescript-webfont.woff2">
+      <publishTime>12/18/2016 01:28:58</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/fontawesome-webfont.eot">
+      <publishTime>12/18/2016 01:28:58</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/fontawesome-webfont.svg">
+      <publishTime>12/18/2016 01:28:58</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/fontawesome-webfont.ttf">
+      <publishTime>12/18/2016 01:28:58</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/fontawesome-webfont.woff">
+      <publishTime>12/18/2016 01:28:58</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/fontawesome-webfont.woff2">
+      <publishTime>12/18/2016 01:28:58</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/FontAwesome.otf">
+      <publishTime>12/18/2016 01:29:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/generator_config.txt">
+      <publishTime>12/18/2016 01:29:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Light.eot">
+      <publishTime>12/18/2016 01:29:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Light.ttf">
+      <publishTime>12/18/2016 01:29:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Light.woff">
+      <publishTime>12/18/2016 01:29:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Light.woff2">
+      <publishTime>12/18/2016 01:29:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Regular.eot">
+      <publishTime>12/18/2016 01:29:02</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Regular.ttf">
+      <publishTime>12/18/2016 01:29:02</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Regular.woff">
+      <publishTime>12/18/2016 01:29:02</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Regular.woff2">
+      <publishTime>12/18/2016 01:29:02</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Semibold.eot">
+      <publishTime>12/18/2016 01:29:02</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Semibold.ttf">
+      <publishTime>12/18/2016 01:29:02</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Semibold.woff">
+      <publishTime>12/18/2016 01:29:02</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-Semibold.woff2">
+      <publishTime>12/18/2016 01:29:02</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-SemiboldItalic.eot">
+      <publishTime>12/18/2016 01:29:04</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-SemiboldItalic.ttf">
+      <publishTime>12/18/2016 01:29:04</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-SemiboldItalic.woff">
+      <publishTime>12/18/2016 01:29:04</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Lato-SemiboldItalic.woff2">
+      <publishTime>12/18/2016 01:29:04</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Montez-Regular-webfont.eot">
+      <publishTime>02/04/2017 03:11:26</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Montez-Regular-webfont.svg">
+      <publishTime>02/04/2017 03:11:26</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Montez-Regular-webfont.ttf">
+      <publishTime>02/04/2017 03:11:26</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/Montez-Regular-webfont.woff">
+      <publishTime>02/04/2017 03:11:26</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/OpenSans-Light.eot">
+      <publishTime>12/18/2016 01:29:04</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/OpenSans-Light.svg">
+      <publishTime>12/18/2016 01:29:06</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/OpenSans-Light.ttf">
+      <publishTime>12/18/2016 01:29:06</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/OpenSans-Light.woff">
+      <publishTime>12/18/2016 01:29:06</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/opensans-regular_0.eot">
+      <publishTime>12/18/2016 01:29:06</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/opensans-regular_0.svg">
+      <publishTime>12/18/2016 01:29:06</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/opensans-regular_0.ttf">
+      <publishTime>12/18/2016 01:29:06</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/opensans-regular_0.woff">
+      <publishTime>12/18/2016 01:29:06</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/opensans-semibold_0.css">
+      <publishTime>12/18/2016 01:29:06</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/opensans-semibold_0.eot">
+      <publishTime>12/18/2016 01:29:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/opensans-semibold_0.svg">
+      <publishTime>12/18/2016 01:29:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/opensans-semibold_0.ttf">
+      <publishTime>12/18/2016 01:29:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/opensans-semibold_0.woff">
+      <publishTime>12/18/2016 01:29:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/rupee_foradian-webfont.eot">
+      <publishTime>12/18/2016 01:29:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/rupee_foradian-webfont.svg">
+      <publishTime>12/18/2016 01:29:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/rupee_foradian-webfont.ttf">
+      <publishTime>12/18/2016 01:29:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/font/rupee_foradian-webfont.woff">
+      <publishTime>12/18/2016 01:29:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/about-img.jpg">
+      <publishTime>12/02/2019 11:01:04</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/akslogo.png">
+      <publishTime>12/02/2019 17:02:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/call-icon.png">
+      <publishTime>08/27/2019 12:52:26</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/captcha2.jpg">
+      <publishTime>10/15/2019 17:24:58</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/con-box-bg.png">
+      <publishTime>12/02/2019 12:18:22</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/contact-bg.jpg">
+      <publishTime>12/02/2019 11:43:22</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/email2-icon.png">
+      <publishTime>12/02/2019 12:31:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/find-img-1.jpg">
+      <publishTime>11/28/2019 10:37:16</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/find-img-2.jpg">
+      <publishTime>08/27/2019 12:15:48</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/find-img-3.jpg">
+      <publishTime>08/27/2019 12:15:16</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/find-img-4.jpg">
+      <publishTime>08/27/2019 12:14:46</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/find-img-5.jpg">
+      <publishTime>08/27/2019 12:14:28</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/find-img-6.jpg">
+      <publishTime>08/27/2019 12:14:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/foot-img-1.jpg">
+      <publishTime>08/27/2019 10:53:04</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/foot-img-2.jpg">
+      <publishTime>08/27/2019 10:53:22</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/foot-img-3.jpg">
+      <publishTime>08/27/2019 10:54:08</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/foot-img-4.jpg">
+      <publishTime>08/27/2019 10:54:22</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/footer-bg.jpg">
+      <publishTime>11/27/2019 18:54:58</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/heading-bg.png">
+      <publishTime>08/24/2019 16:57:10</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/heading-bg2.png">
+      <publishTime>08/26/2019 11:39:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/hot-tour-bg.jpg">
+      <publishTime>11/28/2019 19:03:04</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/hot-tour1.jpg">
+      <publishTime>11/28/2019 19:01:20</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/hotpack-detail.jpg">
+      <publishTime>12/12/2019 10:24:30</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/hotpack-detail2.jpg">
+      <publishTime>12/12/2019 10:24:32</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/hotpack-detail3.jpg">
+      <publishTime>12/12/2019 10:24:32</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/hotpack-img.jpg">
+      <publishTime>12/03/2019 13:40:34</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/inner-banner.jpg">
+      <publishTime>12/02/2019 10:34:34</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/inner-banner2.jpg">
+      <publishTime>12/02/2019 15:24:28</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/inrproimg.jpg">
+      <publishTime>12/02/2019 16:54:38</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/international1.jpg">
+      <publishTime>11/28/2019 17:07:54</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/logo.png">
+      <publishTime>11/27/2019 17:05:38</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/mail.png">
+      <publishTime>07/26/2019 17:58:40</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/map-marker.png">
+      <publishTime>07/26/2019 17:58:16</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/mice-bg.jpg">
+      <publishTime>11/28/2019 11:57:30</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/nextarrow.png">
+      <publishTime>12/03/2019 10:09:06</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/nextarrow2.png">
+      <publishTime>12/03/2019 11:16:48</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/no_image.png">
+      <publishTime>12/14/2019 15:15:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/orrange-icon.jpg">
+      <publishTime>12/23/2019 15:26:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/person_1.jpg">
+      <publishTime>06/26/2018 14:45:10</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/person_2.jpg">
+      <publishTime>06/26/2018 14:45:46</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/person_3.jpg">
+      <publishTime>06/26/2018 14:46:28</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/person_4.jpg">
+      <publishTime>07/01/2018 13:57:14</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/phone-icon.png">
+      <publishTime>07/26/2019 17:57:52</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/phone2-icon.png">
+      <publishTime>12/02/2019 12:30:20</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/prevarrow.png">
+      <publishTime>12/03/2019 10:10:02</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/prevarrow2.png">
+      <publishTime>12/03/2019 11:17:10</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/scroll-top.png">
+      <publishTime>12/21/2016 03:58:28</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/slider-3.jpg">
+      <publishTime>12/07/2019 12:28:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/slider-4.jpg">
+      <publishTime>12/07/2019 12:28:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/slider-5.jpg">
+      <publishTime>12/07/2019 12:28:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/slider.jpg">
+      <publishTime>12/07/2019 12:27:54</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/slider2.jpg">
+      <publishTime>12/07/2019 12:28:00</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/testi-bg.jpg">
+      <publishTime>11/28/2019 16:19:54</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/images/Thumbs.db">
+      <publishTime>02/03/2017 02:12:12</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/bootstrap.min.js">
+      <publishTime>12/07/2019 13:21:42</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/index.html">
+      <publishTime>02/07/2020 18:28:46</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/index.js">
+      <publishTime>12/07/2019 13:21:42</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/jquery-1.9.0.min.js">
+      <publishTime>12/07/2019 13:21:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/jquery.flexisel.js">
+      <publishTime>12/07/2019 13:21:42</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/jquery.min.js">
+      <publishTime>12/07/2019 13:21:42</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/jquery.nivo.slider.js">
+      <publishTime>12/07/2019 13:21:42</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/jquery1.7.1.min.js">
+      <publishTime>12/07/2019 13:21:42</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/main.js">
+      <publishTime>12/07/2019 13:21:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/navAccordion.js">
+      <publishTime>12/07/2019 13:21:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/navAccordion.min.js">
+      <publishTime>12/07/2019 13:21:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/owl.carousel.min.js">
+      <publishTime>12/07/2019 13:21:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/script.js">
+      <publishTime>12/07/2019 13:21:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/scroll.js">
+      <publishTime>12/07/2019 13:21:44</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/slide3-js.js">
+      <publishTime>12/07/2019 13:21:46</publishTime>
+    </File>
+    <File Include="Content/StarIndiaHoliday/js/wow.min.js">
+      <publishTime>12/07/2019 13:21:46</publishTime>
+    </File>
+    <File Include="emailTemplates/enquiry.html">
+      <publishTime>12/05/2019 08:25:28</publishTime>
+    </File>
+    <File Include="emailTemplates/enquiryfortour.html">
+      <publishTime>12/06/2019 12:26:28</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/30/2019 13:49:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/30/2019 13:49:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>12/01/2019 15:40:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>12/01/2019 15:40:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>12/01/2019 15:40:12</publishTime>
+    </File>
+    <File Include="Views/Admin/Category.cshtml">
+      <publishTime>11/30/2019 18:30:44</publishTime>
+    </File>
+    <File Include="Views/Admin/ChangePassword.cshtml">
+      <publishTime>01/16/2020 16:32:12</publishTime>
+    </File>
+    <File Include="Views/Admin/contactusenquiry.cshtml">
+      <publishTime>01/17/2020 18:15:38</publishTime>
+    </File>
+    <File Include="Views/Admin/dashboard.cshtml">
+      <publishTime>02/11/2020 13:11:46</publishTime>
+    </File>
+    <File Include="Views/Admin/destination.cshtml">
+      <publishTime>12/02/2019 10:35:48</publishTime>
+    </File>
+    <File Include="Views/Admin/Hotpackage.cshtml">
+      <publishTime>02/07/2020 15:41:18</publishTime>
+    </File>
+    <File Include="Views/Admin/Indexenquiry.cshtml">
+      <publishTime>01/18/2020 16:37:26</publishTime>
+    </File>
+    <File Include="Views/Admin/Login.cshtml">
+      <publishTime>02/07/2020 16:37:36</publishTime>
+    </File>
+    <File Include="Views/Admin/Testimonial.cshtml">
+      <publishTime>02/07/2020 15:20:44</publishTime>
+    </File>
+    <File Include="Views/Admin/tour.cshtml">
+      <publishTime>12/09/2019 08:46:12</publishTime>
+    </File>
+    <File Include="Views/Admin/touristFeedback.cshtml">
+      <publishTime>02/11/2020 11:46:06</publishTime>
+    </File>
+    <File Include="Views/Admin/_Partialdestination.cshtml">
+      <publishTime>12/02/2019 10:35:48</publishTime>
+    </File>
+    <File Include="Views/Admin/_PartialHotpackage.cshtml">
+      <publishTime>12/17/2019 10:37:42</publishTime>
+    </File>
+    <File Include="Views/Admin/_PartialTour.cshtml">
+      <publishTime>12/10/2019 15:25:02</publishTime>
+    </File>
+    <File Include="Views/Admin/_PartialtouristFeedback.cshtml">
+      <publishTime>02/11/2020 13:03:40</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutAdmin.cshtml">
+      <publishTime>02/07/2020 15:49:22</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutStarIndiaHoliday.cshtml">
+      <publishTime>02/11/2020 12:41:47</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/aboutus.cshtml">
+      <publishTime>02/11/2020 15:03:07</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/contactus.cshtml">
+      <publishTime>02/11/2020 13:38:09</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/Disclaimer.cshtml">
+      <publishTime>02/11/2020 11:03:42</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/Hotpackage.cshtml">
+      <publishTime>12/28/2019 16:14:08</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/Index.cshtml">
+      <publishTime>02/08/2020 18:12:45</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/TermsCondtion.cshtml">
+      <publishTime>02/11/2020 14:12:11</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/tour.cshtml">
+      <publishTime>02/11/2020 13:42:32</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/_PartialHotPackageForIndex.cshtml">
+      <publishTime>12/16/2019 09:03:54</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/_PartialHotPackageMenu.cshtml">
+      <publishTime>12/12/2019 10:19:16</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/_PartialIndexEnquiry.cshtml">
+      <publishTime>01/16/2020 16:29:32</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/_PartialLeftMenu.cshtml">
+      <publishTime>12/05/2019 18:01:16</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/_PartialTouristFeedback.cshtml">
+      <publishTime>02/11/2020 13:01:05</publishTime>
+    </File>
+    <File Include="Views/StarIndiaHoliday/_PartialTourPackageMenu.cshtml">
+      <publishTime>02/07/2020 18:34:29</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>11/30/2019 13:49:08</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/07/2020 18:50:45</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,199 @@
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\csc.exe
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Collections.Immutable.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Reflection.Metadata.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\vbc.exe
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe.config
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll.config
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.pdb
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.Web.Infrastructure.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.xml
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.xml
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.xml
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.xml
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.xml
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.xml
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.dll
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.pdb
+E:\TestProject\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.csprojResolveAssemblyReference.cache
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\csc.exe
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Collections.Immutable.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Reflection.Metadata.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\vbc.exe
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe.config
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll.config
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.pdb
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.Web.Infrastructure.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.xml
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.xml
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.xml
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.xml
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.xml
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.xml
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.dll
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.pdb
+E:\New folder\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.csprojResolveAssemblyReference.cache
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\csc.exe
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Collections.Immutable.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Reflection.Metadata.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\vbc.exe
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe.config
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll.config
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.pdb
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.Web.Infrastructure.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.xml
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.xml
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.xml
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.xml
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.xml
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.xml
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.dll
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.pdb
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll.CodeAnalysisLog.xml
+E:\Sandesh Kumar\Projects\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll.lastcodeanalysissucceeded
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\csc.exe
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\vbc.exe
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll.config
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.pdb
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.xml
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.xml
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.xml
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.xml
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.xml
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.xml
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.csprojResolveAssemblyReference.cache
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.dll
+C:\Users\AKS\Desktop\07-Feb-2020\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.pdb
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\csc.exe
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Collections.Immutable.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Reflection.Metadata.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\vbc.exe
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe.config
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll.config
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.pdb
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.Web.Infrastructure.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.xml
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.xml
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.xml
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.xml
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.xml
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.xml
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.csprojResolveAssemblyReference.cache
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.dll
+G:\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.pdb
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\csc.exe
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Collections.Immutable.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\System.Reflection.Metadata.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\vbc.exe
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\roslyn\VBCSCompiler.exe.config
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll.config
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\StarIndiaHoliday.pdb
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.Web.Infrastructure.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Razor.xml
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.xml
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Deployment.xml
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Webpages.Razor.xml
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Helpers.xml
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\bin\System.Web.Mvc.xml
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.csprojResolveAssemblyReference.cache
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.dll
+G:\AKSProjecte\Star\New folder\StarIndiaHoliday\StarIndiaHoliday\StarIndiaHoliday\obj\Debug\StarIndiaHoliday.pdb

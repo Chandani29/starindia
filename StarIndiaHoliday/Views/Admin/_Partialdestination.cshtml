@@ -1,0 +1,27 @@
+﻿
+@model List<StarIndiaHoliday.Models.Destination>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="admintable">
+    <tr>
+        <th width="74" align="left" valign="middle">Sr.No.</th>
+        <th width="240" align="left" valign="middle">Category</th>
+        <th width="723" align="left" valign="middle">Destination</th>
+        <th width="74" align="left" valign="middle">Status</th>
+        <th width="68" align="left" valign="middle">Edit</th>
+        <th width="55" align="left" valign="middle">Remove</th>
+    </tr>
+@{int i = 0;}
+
+@foreach (var item in Model)
+{
+    i = i + 1;
+    <tr>
+        <td align="left" valign="top">@i.ToString()</td>
+        <td align="left" valign="top">@item.categoryName</td>
+        <td align="left" valign="top">@item.destination</td>
+        <td align="left" valign="top"><strong>@(item.status == true ? @Html.Raw("<span style='color:green;'>Active</span>") : @Html.Raw("<span style='color:red;'>Inactive</span>"))</strong></td>
+        <td align="left" valign="top"><a href="~/Admin/destination/@item.id?command=ed">Edit</a></td>
+        <td align="center" valign="top"><a href="~/Admin/destination/@item.id?command=del"
+         onclick="return confirm('Are you sure you wish to delete this Record?');"><img src="@Url.Content("~/Content/Admin/images/icon-bin.jpg")" alt="" width="25" height="25" border="0" align="absmiddle" /></a></td>
+    </tr>
+}
+</table>

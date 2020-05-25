@@ -1,0 +1,87 @@
+﻿@model StarIndiaHoliday.Category
+
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div id="wrap">
+    <div class="clear" style="height:5px;"></div>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <div id="wrap2">
+        <h1>Add Destination</h1>
+        <br>
+        <span style="color:green;">@ViewBag.Success @TempData["msg"]</span>
+        <span style="color:red;">@ViewBag.Error</span>
+        <div class="form-raw">
+            <div class="form-name">Category</div>
+            <div class="form-txtfld">
+
+                 @{
+                var ddlMsgForlistItems = new List<System.Web.UI.WebControls.ListItem>();
+                 ddlMsgForlistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "Please Select", Value = "" });
+                ddlMsgForlistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "Domestic", Value = "Domestic" });
+               ddlMsgForlistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "International", Value = "International" });
+                   }<System.Web.UI.WebControls.ListItem>
+
+             @Html.DropDownListFor(Model => Model.Category, new SelectList(ddlMsgForlistItems, "Value", "Text"), new { id = "Category" })
+              <span style="color:red;">@Html.ValidationMessageFor(Model => Model.Category)</span>
+    @*<select>
+            <option>select option</option>
+            <option>Domestic</option>
+            <option>International</option>
+        </select>*@
+    <span class="req-field">required field</span>
+</div>
+        </div>
+        <div class="clear"></div>
+        <div class="form-raw">
+            <div class="form-name">Add Destination</div>
+            <div class="form-txtfld">
+                @*<input type="text">*@
+                @Html.TextBoxFor(model => model.AddDestination)
+                <span class="req-field">required field</span>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-raw">
+            <div class="form-name">Active</div>
+            <div class="form-txtfld">
+                @*<input type="checkbox">Status(Active/Inactive)*@
+                @Html.CheckBoxFor(model => model.statusActiveOrNot, new { @checked = "checked" })
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+
+        <div class="form-raw">
+            <div class="form-name">&nbsp;</div>
+            <div class="form-txtfld">
+                @*<input type="button" class="btn" value="Submit">*@
+                @if (ViewBag.btn == "Update")
+                {
+                    <input type="submit" value="Update" class="btn" name="cmd">
+                }
+                else
+                {
+                    <input type="submit" value="Submit" class="btn" name="cmd" />
+                }
+            </div>
+        </div>
+        }
+    </div>
+    <div class="clear">&nbsp;</div>
+</div>
+<div id="wrap3">
+    @{Html.RenderAction("_PartialCategory");}
+    <div class="clear">&nbsp;</div>
+</div>
+
+
+
+<div class="clear"></div>
+

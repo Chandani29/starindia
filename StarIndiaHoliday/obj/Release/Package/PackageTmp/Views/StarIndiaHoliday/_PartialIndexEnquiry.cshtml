@@ -1,0 +1,109 @@
+﻿@model StarIndiaHoliday.Models.contactus
+<script type="text/javascript">
+
+    $(function () {
+        $(".refreshme").click(function () {
+            // Get the id from the link
+            //alert("Hello");
+            $.post("/getcaptindexEnquiry", 
+                    function (data) { 
+                        $('#ckCaptcha').attr("src", "/getcaptindexEnquiry" + '?' + new Date().getTime());
+                    });
+        });
+        // Document.ready -> link up remove event handler 
+
+    });
+</script>
+
+<script type="text/javascript">  
+
+    function sendEnquiry1() {
+        //alert("Fi");
+
+        //alert("Fi");
+        //return false;
+        $('#msg').html("");
+        
+
+        if ($("#name").val() != "" && $("#email").val() != "" && $("#mobile").val() != "" && $("#captcha").val() != "" && $("#message").val() != "") {
+
+            $('#sendEnquiry').hide();
+            $('.buttonload').show();
+            $.post("/MailToAdmin", { "name": $("#name").val(), "email": $("#email").val(), "mobile": $("#mobile").val(), "captcha": $("#captcha").val(), "message": $("#message").val() },
+                                            function (data) {
+                                                $('#sendEnquiry').show();
+                                                $('.buttonload').hide();
+                                                if (data == "Yes") {
+                                                    $('#name').val('');
+                                                    $('#email').val('');
+                                                    $('#mobile').val('');
+                                                    $('#captcha').val('');
+                                                    $('#message').val('');
+                                                    $('#msg').val('');
+                                                    $('#msg').show();
+                                                    
+                                                    $('#msg').html("Your Enquiry has been Submitted.").delay(3000).fadeOut(300);
+                                                }
+                                                if (data == "No") {
+                                                    $('#error').show();
+                                                    $('#error').html("Captcha Code is Wrong.").delay(3000).fadeOut(300);
+                                                }
+                                            });
+
+            return false;
+        }
+    }
+</script>
+<div class="home-form">
+    <div class="container-fluid">
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+        <div class="form-inline">
+            <div class="form-text">
+                <h1> Explore<span> Your Amazing </span> Holidays</h1>
+                <p> Find great places to stay, eat, shop, or visit from local experts</p>
+                <p id="msg" style="color:green;"></p>
+                <p id="error" style="color:red;"></p>
+            </div>
+            <div class="form-inner">
+                <div class="col-sm-4 col-xs-12 minpadding">  
+                    @Html.TextBoxFor(model => model.name, new { @class = "form-control form-control2", @id = "name", @placeholder = "Enter name" })
+                </div>
+                <div class="col-sm-4 col-xs-12 minpadding"> 
+                    @Html.TextBoxFor(model => model.email, new { @class = "form-control form-control2", @id = "email", @placeholder = "Enter email" })
+                </div>
+                <div class="col-sm-4 col-xs-12 minpadding"> 
+                    @Html.TextBoxFor(model => model.mobile, new { @class = "form-control form-control2", @id = "mobile", @placeholder = "Enter mobile number" })
+                </div>
+            </div>
+            <div class="textarea form-inner">
+                <div class="col-sm-4 col-xs-12 minpadding">
+                    @Html.TextAreaFor(model => model.message, new { @class = "textarea2 form-control2", @id = "message", @placeholder = "Enter message", @row = "1" })
+                </div>
+
+                <div class="col-sm-8 col-xs-12 minpadding">
+                    @Html.TextBoxFor(model => model.captcha, new { @class = "form-control captchafld", @id = "captcha", @placeholder = "Enter captcha code" })
+                    <div class="captcha-img2">
+                        <div id="refreshContact" class="captchacode">
+                            <img id="ckCaptcha" src="/getcaptindexEnquiry" style="max-width:94%; max-height:49px;">
+                        </div>
+                        <a href="javascript:void(0);" class="btn refresh-btn contactRefresh refreshme"><i class="fa fa-refresh rotate" aria-hidden="true"></i></a>
+                        <button id="sendEnquiry" type="submit" class="quiry-btn" onclick="return sendEnquiry1();">Send Enquiry</button>
+                        <button class="buttonload quiry-btn" style="display:none;">
+                            <i class="fa fa-refresh fa-spin"></i>Loading
+                        </button>
+                    </div>
+
+
+                </div>
+
+                
+            </div>
+
+        </div>
+}
+
+    </div>
+    <div class="clear"></div>
+</div>

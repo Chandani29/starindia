@@ -1,0 +1,21 @@
+﻿@model StarIndiaHoliday.Models.TourPackageMenu
+<li>
+    <a href="/tour/Domestic-Tour">Domestic Tour</a>
+    <ul>
+        @foreach (var item in Model.objdestination.Where(x => x.categoryName.Contains("Domestic")))
+        {
+            <li><a href="/tour/Domestic-Tour/@item.destination.Replace(" ","-")">@item.destination</a></li>
+        }
+
+    </ul>
+</li>
+<li>
+    <a href="/tour/International-Tour">International Tour</a>
+    <ul>
+        @foreach (var item in Model.objdestination.Where(x => x.categoryName.Contains("International")))
+            {
+            <li><a href="/tour/International-Tour/@item.destination.Replace(" ","-")">@item.destination</a></li>
+        }
+
+    </ul>
+</li>

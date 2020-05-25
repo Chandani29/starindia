@@ -1,0 +1,26 @@
+﻿@model List<StarIndiaHoliday.Models.touristFeedback>
+
+        @foreach (var item in Model)
+        {
+            <div class="item">
+                <div class="col-md-12">
+                    <div class="testi-box">
+                        <div class="testi-text">
+                            <p>
+                                @item.shortDescription
+                            </p>
+                        </div>
+                        <div class="testi-img">
+                            <div class="client-img">
+                                <img src="@Url.Content("~/Content/uploadImage/smallImage/"+item.imageName+"")">
+                            </div>
+                            <div class="client-name">
+                                <h6>@item.name</h6>
+                                <span>@item.designatin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        } 
+

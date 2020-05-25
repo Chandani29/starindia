@@ -1,0 +1,87 @@
+﻿@model StarIndiaHoliday.Models.Hotpackage
+@{
+    ViewBag.Title = "Hotpackage";
+    Layout = "~/Views/Shared/_LayoutStarIndiaHoliday.cshtml";
+}
+
+<script type="text/javascript">
+    $(function () {
+        $(".terms").click(function () {
+            $(".terms-details").toggleClass("main");
+            $(".terms").toggleClass("opened");
+        });
+    });
+</script>
+<!---inner banner-->
+<div class="inner-banner2">
+    <div class="paging-name">
+        <ul>
+            <li><a href="#">Hot <span> Packages</span></a> </li>
+        </ul>
+    </div>
+</div>
+<!--end banner-->
+<div class="graybody">
+    <div class="container-fluid">
+        <div class="probody-up">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="pageing-outer" style="margin: 0px;">
+                        <div class="package-hd3">@Model.PackageName</div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="col-sm-8">
+                <div class="hotpack-det">
+                    <h3>@Model.Duration</h3>
+                    <h4>Package cost Rs. @Convert.ToInt32(Model.PackageCost).ToString("#,##0")/-</h4>
+                    <div class="shortdes">
+                        <p>
+                            @Model.ShortDescription
+                        </p>
+                    </div>
+
+
+                    @Html.Raw(Model.Details)
+                    @if(Convert.ToString(Model.TermsConditions)!="")
+                    { 
+                    <div class="terms-outer">
+                        <a href="JavaScript:Void(0);" class="terms"><span>How To Book Terms & Conditions</span> </a>
+                        <div class="terms-details">
+                            @Html.Raw(Model.TermsConditions)
+                        </div>
+                        
+                    </div>
+                    }
+
+
+
+                    <a href="#" class="booknow">Book Now</a>
+
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+@if (Model.photo1 != "")
+{
+                <div class="hotpack-img">
+                    <img src="~/Content/uploadImage/largeImage/@Model.photo1" alt="">
+                </div>
+}
+                @if (Model.photo2 != "")
+                {
+                    <div class="hotpack-img">
+                        <img src="~/Content/uploadImage/largeImage/@Model.photo2" alt="">
+                    </div>
+                }
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+
+    </div>
+</div>
+

@@ -1,0 +1,8 @@
+﻿@model List<StarIndiaHoliday.Models.Hotpackage>
+<ul style="display: block;">
+    @foreach (var item in Model)
+    {
+        <li><a href="/hotPackage/@item.id">@item.PackageName</a></li>
+    }
+
+</ul>

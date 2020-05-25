@@ -1,0 +1,97 @@
+﻿@model StarIndiaHoliday.Models.Destination
+@{
+    ViewBag.Title = "destination";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $("#ddlCategory").change(function () {
+                    $.ajax({
+                        url: '/Admin/_Partialdestination',
+                        cache: false,
+                        type: "POST",
+                        data: { categoryName: $("#ddlCategory").val(),state:'onChange' },
+                        success: function (data) {
+                            $("#wrap4").html(data);
+                        },
+                        error: function () {
+                            alert("failed");
+                        }
+
+                    });
+                    return false;
+                });
+
+    });
+</script>
+<div id="wrap">
+    <div class="clear" style="height:5px;"></div>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <div id="wrap2">
+        <h1>Add Destination</h1>
+        <span style="color:green;">@ViewBag.Success @TempData["msg"]</span>
+        <span style="color:red;">@ViewBag.Error</span>
+        <br>
+        <div class="form-raw">
+            <div class="form-name">Category</div>
+            <div class="form-txtfld">
+                @{
+                    var categorylistItems = new List<System.Web.UI.WebControls.ListItem>();
+                    categorylistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "Select Category", Value = "" });
+                    categorylistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "Domestic", Value = "Domestic" });
+                    categorylistItems.Add(new System.Web.UI.WebControls.ListItem { Text = "International", Value = "International" });
+                }
+                @Html.DropDownListFor(Model => Model.categoryName, new SelectList(categorylistItems, "Value", "Text"), new { id = "ddlCategory" })
+              
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="form-raw">
+            <div class="form-name">Add Destination</div>
+            <div class="form-txtfld">
+                @Html.TextBoxFor(model => model.destination)
+               
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-raw">
+            <div class="form-name">Status</div>
+            <div class="form-txtfld">
+                @Html.CheckBoxFor(model => model.status, new { @checked = "checked" }) (Active / Inactive)
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+
+        <div class="form-raw">
+            <div class="form-name">&nbsp;</div>
+            <div class="form-txtfld">
+                @*<input type="button" class="btn" value="Submit">*@
+
+                @if (ViewBag.btn == "Update")
+                {
+                    <input type="submit" value="Update" class="btn" name="cmd">
+                }
+                else
+                {
+                    <input type="submit" value="Submit" class="btn" name="cmd" />
+                }
+            </div>
+        </div>
+    </div>
+}
+    <div class="clear">&nbsp;</div>
+</div>
+<div id="wrap3">
+    <div id="wrap4">
+        @{Html.RenderAction("_Partialdestination");}
+    </div>
+    <div class="clear">&nbsp;</div>
+</div>
+

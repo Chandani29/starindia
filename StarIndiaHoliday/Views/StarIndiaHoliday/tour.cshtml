@@ -1,0 +1,103 @@
+﻿@model List<StarIndiaHoliday.Models.Tour>
+@{
+    ViewBag.Title = "tour";
+    Layout = "~/Views/Shared/_LayoutStarIndiaHoliday.cshtml";
+}
+
+<!---inner banner-->
+<div class="inner-banner2">
+    <div class="paging-name">
+        <ul> 
+            <li><a href="/tour/@ViewBag.tourType-tour">@ViewBag.tourType.Substring(0, 1).ToUpper()@ViewBag.tourType.Substring(1)<span>Tour Packages</span></a> </li>
+        </ul>
+    </div>
+</div>
+<!--end banner-->
+<div class="graybody">
+    <div class="container-fluid-fluid">
+        <div class="probody-up">
+            <div class="row">
+                <div class="col-sm-4 col-md-3">
+                    <div class="package-hd">Tour Packages</div>
+                    <nav class="mainNav ">
+                        <ul>
+                            <!--  class="selected" -->
+                           @{Html.RenderAction("_PartialLeftMenu");}
+
+                        </ul>
+                    </nav>
+
+                    <div class="package-hd2">Hot Packages</div>
+                    <div class="hotpack-ad">
+                        <div class="hotpack-content">
+                            <span>5 Days 4 Nights</span>
+                            <p>Phuket Tour Packages<br> Premium Tour</p>
+                        </div>
+                        <a href="/contactus" class="enquirybtn">Enquiry Now</a>
+                        <img src="@Url.Content("~/Content/StarIndiaHoliday/images/hotpack-img.jpg")"  title="hot packages">
+
+                    </div>
+                </div>
+
+                <div class="col-sm-8 col-md-9">
+                    <div class="pageing-outer">
+                        <ul>
+                            <li><a href="/">Home</a> /</li>
+                            <li><a href="#">Tour Packages</a> /</li>
+                            <li><a href="/tour/@ViewBag.tourType-tour">@ViewBag.tourType.Substring(0, 1).ToUpper()@ViewBag.tourType.Substring(1) Tour Packages</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+@foreach (var item in Model)
+{
+                    <div class="col-sm-5 col-md-4 padl-0">
+                        <div class="card2 inrpro-cont">
+                            <div class="card2-img-top inpro-img">
+                                <span><b>&nbsp;</b> @item.destination</span>
+                                <img src="~/Content/uploadImage/smallImage/@item.imageName"  alt="Card image">
+
+                            </div>
+                            <div class="card2-body">
+                                <span><i class="fa fa-inr"></i> <b>@item.price.ToString("#,##0")</b> </span>
+                                <h4 class="card2-title"><i class="fa fa-map-marker fa-1x"></i> @item.tourName	</h4>
+                                <div class="card2-text">
+                                    <h6>@(item.shortDescription.ToString().Length > 60 ? item.shortDescription.Substring(0, 59) : item.shortDescription)</h6>
+
+                                    @{string[] logo = { "fa fa-bed", "fa fa-car", "fa fa-cutlery", "fa fa-eye", "fa fa-ship", "fa fa-cc-visa", "fa fa-plane", "fa fa-user", "fa fa-glass" };
+
+                                        string[] facility = { "Hotels", "Transport", "Meals", "Sightseeing", "Houseboat", "Visa", "Flight", "Guide", "Drinks" };
+
+                                        string[] faclityFromDB = item.facility.Split(',');
+
+                                        foreach (var itemfacility in faclityFromDB)
+                                        {
+                                            for (int i = 0; i < facility.Count(); i++)
+                                            {
+                                                if (itemfacility == facility[i])
+                                                {
+                                                    <div class="hot-tour-icon">
+                                                        <a href="" data-toggle="tooltip" data-placement="top" title="" data-original-title="@itemfacility"> <i class="@logo[i]"></i></a>
+                                                    </div>
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    <div class="clear"></div>
+                                    <a href="/contactus/@item.id" class="btn read3">Send Enquiry</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+}
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+    </div>
+</div>
+

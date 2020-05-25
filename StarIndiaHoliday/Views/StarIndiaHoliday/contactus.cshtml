@@ -1,0 +1,113 @@
+﻿@model StarIndiaHoliday.Models.contactus
+@{
+    ViewBag.Title = "contactus";
+    Layout = "~/Views/Shared/_LayoutStarindiaholiday.cshtml";
+}
+<script type="text/javascript">StarIndiaHoliday
+    $(function () {
+        $(".contactRefresh").click(function () {
+            //alert("Hello");
+            $.post("/getcaptchaContactUs",
+                    function (data) {
+
+                        $('#ckCaptcha').attr("src", "/getcaptindexEnquiry" + '?' + new Date().getTime());
+                    });
+        });
+    });
+</script>
+<!---inner banner-->
+<div class="inner-banner">
+    <div class="paging-name">
+        <ul>
+            <li><a href=#>Contact<span>us</span></a> </li>
+        </ul>
+    </div>
+</div>
+<!--end banner-->
+<div class="contact-outer">
+    <div class="container-fluid">
+        <div class="col-sm-7 col-sm-12">
+            <div class="login-box">
+                <h3> Make An Enquiry</h3>
+                <span style="color:green;">@ViewBag.Success @TempData["msg"]</span>
+                <span style="color:red;">@ViewBag.Error</span>
+                @using (Html.BeginForm())
+                {
+                    @Html.ValidationSummary(true)
+                    <div class="form-outer ">
+                        @if (ViewBag.tourDetails != null)
+                        {
+                            <div class="form-group group">
+                                <label for="name"> Enquiry For the Tour :</label>
+                                @Html.TextBoxFor(model => model.enquiryforTour, new { @class = "form-control control-2", @readonly = true, @Value = ViewBag.tourDetails })
+
+                            </div>
+                        }
+                        <div class="form-group group">
+                            <label for="name"> Name :</label>
+                            @Html.TextBoxFor(model => model.name, new { @class = "form-control control-2" })
+
+                        </div>
+                        <div class="form-group group">
+                            <label for="name"> Email Id:</label>
+                            @Html.TextBoxFor(model => model.email, new { @class = "form-control control-2" })
+                        </div>
+                        <div class="form-group group">
+                            <label for="name"> Mobile:</label>
+                            @Html.TextBoxFor(model => model.mobile, new { @class = "form-control control-2" })
+                        </div>
+
+                        <div class="form-group group">
+                            <label for="text">Message :</label>
+                            @Html.TextAreaFor(model => model.message, new { @class = "form-control control-2 textarea-3" })
+                        </div>
+
+                        <div class="form-group group">
+                            <label for="choose file">Enter Capcha :</label>
+                            @Html.TextBoxFor(model => model.captcha, new { @class = "form-control control-2 captcha" })
+                            <div class="captcha-img">
+                                <div id="refreshContact">
+                                    <img id="ckCaptcha" src="/getcaptchaContactUs" style="max-width:94%; max-height:49px;" />
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="btn  refresh-btn contactRefresh"><i class="fa fa-refresh rotate" aria-hidden="true"></i></a>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" style="padding: 8px 25px 0px 0px;">
+                                <span>
+                                    <input type="submit" class="btn submit2 buttonfx" value="Send a Message" />
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                }
+
+            </div>
+        </div>
+
+        <div class="col-sm-5 col-sm-12">
+            <div class="con-box">
+                @*<h3> Make An Enquiry</h3>*@
+                <div class="con-detail">
+                    <span>Star india Holiday.com </span>
+                    <p> <b> Company Address: </b></p>
+                    <p>Star India Holiday,</p>
+                    <p> B-86, </p>
+                    <p>Block B Sector 60 Noida UP 201301 </p>
+                    <div class="add">
+                        <ul>
+                            <li class="call-2"> 0120- 4205148</li>
+                            <li class="mail-2"><a href="support@starindiaholiday.com">support@starindiaholiday.com</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

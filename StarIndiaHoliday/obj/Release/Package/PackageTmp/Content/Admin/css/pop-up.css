@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.admintable2 {
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	background: #FFF;
+	float: left;
+	margin: 4px 0 0 0;
+	border: 1px solid #2f2f2f;
+	border-left: none;
+	border-bottom: none;
+}
+.admintable2 th {
+	margin: 0px;
+	padding: 8px 3px 8px 5px;
+	text-align: left;
+	background-color: #2f2f2f;
+	color: #fff;
+	border-left: 1px solid #2f2f2f;
+	font: bold 11px Arial, Helvetica, sans-serif;
+}
+.admintable2 td {
+	margin: 0px;
+	padding: 8px 3px 8px 5px;
+	text-align: left;
+	color: #000;
+	font: 12px Arial, Helvetica, sans-serif;
+	border-left: 1px solid #2f2f2f;
+	border-bottom: 1px solid #2f2f2f;
+}
+.admintable2 td img {
+	max-width: 40px;
+	text-align: center !important;
+}
+.admintable2 td strong {
+	color: #e74940;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.admintable2 td a {
+	color: #e74940;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.admintable2 td a:hover {
+	color: #000;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+
+
+
+.v-center > div {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	top: -10%;
+}
+.btn {
+	font-size: 3vmin;
+	padding: 0.75em 1.5em;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	color: #333;
+	text-decoration: none;
+	display: inline;
+	border-radius: 4px;
+	-webkit-transition: background-color 1s ease;
+	-moz-transition: background-color 1s ease;
+	transition: background-color 1s ease;
+}
+.btn:hover {
+	background-color: #ddd;
+	-webkit-transition: background-color 1s ease;
+	-moz-transition: background-color 1s ease;
+	transition: background-color 1s ease;
+}
+.btn-small {
+	padding: .75em 1em;
+	font-size: 0.8em;
+}
+.modal-box {
+	display: none;
+	position: absolute;
+	z-index: 100000000;
+	width: 98%;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	background-clip: padding-box;
+}
+@media (min-width: 32em) {
+.modal-box {
+	width: 40%;
+}
+}
+.modal-box .header, .modal-box .modal-header {
+	padding: 1.25em 1.5em;
+	background: #31ab46;
+	color: #fff;
+}
+.modal-box .header h3, .modal-box .header h4, .modal-box .modal-header h3, .modal-box .modal-header h4 {
+	margin: 0;
+}
+.modal-box .modal-body {
+	padding: 2em 1.5em;
+}
+.modal-box footer, .modal-box .modal-footer {
+	padding: 1em;
+	/*  border-top: 1px solid #ddd; */
+	background: rgba(0, 0, 0, 0.02);
+	text-align: right;
+}
+.modal-overlay {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6) !important;
+}
+a.close {
+	line-height: 1;
+	font-size: 40px;
+	position: absolute;
+	top:1%;
+	right: 2%;
+	text-decoration: none;
+	color: #fff;
+}
+a.close:hover {
+	color: #ff0000;
+	-webkit-transition: color 1s ease;
+	-moz-transition: color 1s ease;
+	transition: color 1s ease;
+}
+
+
+.pop-frm {
+    margin-bottom: 11px;
+    position: relative;
+}
+
+.delivery-field label {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+.delivery-field span.order-no {
+    font: bold 15px Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.pop-frm select {
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.delivery-field label.remarks {
+    width: 75px;
+    float: left;
+}
+
+
+.delivery-field label {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+.delivery-field textarea {
+    width:60%;
+    height: 65px;
+    padding: 10px;
+    float: left;
+}
+
+.login-field {
+    margin-bottom: 5px;
+}
+.sign-in-btn {
+    padding: 7px 11px !important;
+    background-color: #e12035;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s ease-in-out;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.scroll {
+    height: 100%;
+    overflow-y: scroll;
+    margin: 0px 0px 0px 3px;
+    height:150px;
+}
+
+ 
+
+
+
+
+
+
+
+
+

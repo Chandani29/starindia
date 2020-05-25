@@ -1,0 +1,50 @@
+﻿@model List<StarIndiaHoliday.Models.Hotpackage>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="admintable">
+    <tr>
+        <th width="45" align="left" valign="middle">Sr.No.</th>
+        <th width="73" align="left" valign="middle">PackageName</th>
+        <th width="73" align="left" valign="middle">Duration</th>
+        <th width="73" align="left" valign="middle">Short Description</th>
+        <th width="67" align="left" valign="middle">Package Cost</th>
+        <th width="55" align="left" valign="middle">Image1</th>
+        <th width="55" align="left" valign="middle">Image2</th>
+        <th width="49" align="left" valign="middle">Status</th>
+        <th width="35" align="left" valign="middle">Edit</th>
+        <th width="68" align="left" valign="middle">Remove</th>
+    </tr>
+@{int i = 0;}
+
+@foreach (var item in Model)
+{
+    i = i + 1;
+
+    <tr>
+        <td align="left" valign="top">@i.ToString()</td>
+        <td align="left" valign="top">@item.PackageName</td>
+        <td align="left" valign="top">@item.Duration</td>
+        <td align="left" valign="top">@(item.ShortDescription.ToString().Length > 60 ? item.ShortDescription.Substring(0, 59)+"..." : item.ShortDescription)</td>
+        <td align="left" valign="top">@item.PackageCost</td>
+        <td align="left" valign="top">
+            @if (item.photo1 != null && item.photo1 != "")
+            {
+                <img src="~/Content/UploadImage/largeImage/@item.photo1" /><br />
+                <a href="~/Admin/Hotpackage/@item.id?command=delimg-1" onclick="return confirm('Are you sure you wish to delete this Image?');">Delete Image</a>
+            }
+        </td>
+        <td valign="top">
+            @if (item.photo2 != null && item.photo2 != "")
+                {
+                <img src="~/Content/UploadImage/largeImage/@item.photo2"><br />
+                <a href="~/Admin/Hotpackage/@item.id?command=delimg-2" onclick="return confirm('Are you sure you wish to delete this Image?');">Delete Image</a>
+            }
+
+        </td>
+
+        <td align="left" valign="top"><strong>@(item.Status == true ? @Html.Raw("<span style='color:green;'>Active</span>") : @Html.Raw("<span style='color:red;'>Inactive</span>"))</strong></td>
+        <td align="left" valign="top"><a href="~/Admin/Hotpackage/@item.id?command=ed">Edit</a></td>
+        <td valign="top"><a href="~/Admin/Hotpackage/@item.id?command=del" onclick="return confirm('Are you sure you wish to delete this Record?');">
+                 <img src="@Url.Content("~/Content/Admin/images/icon-bin.jpg")" alt="" style="border:none" align="absmiddle" /></a></td>
+    </tr>
+}
+</table>
+                                                                                                                                                                                                                                                                                                                                                                                                    

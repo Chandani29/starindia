@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Star India Holiday</title>
+    <!-- slider start -->
+    <!-- slider end -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/Admin/css/style.css")">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 7.]>
+    <script defer type="text/javascript" src="pngfix1.js"></script>
+    <![endif]-->
+    <!-- Menu start --------------->
+    <link href="@Url.Content("~/Content/Admin/menu/quickmenu0.css")" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="@Url.Content("~/Content/Admin/menu/quickmenu0.js")"></script>
+    <!-- Menu End --------------->
+
+    @*For Validation start*@
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+    @*For Validation end*@
+
+    @*Declaration for use ckeditor start*@
+    <script type="text/javascript" src="@Url.Content("~/ckeditor/ckeditor.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/ckeditor/adapters/jquery.js")"></script>
+    @*Declaration for use ckeditor end*@
+
+</head>
+<body>
+    <div>
+        <header>
+            @if(Session["UserNameAdmin"]==null)
+            {
+                Response.Redirect("~/Admin/login");
+            }
+
+            <div id="wrap">
+                <div class="logo"><img src="@Url.Content("~/Content/Admin/images/logo.png")" border="0"></div>
+                <div class="topmenu">
+                    <ul>
+                        <li><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="/Admin/ChangePassword">Change Password</a>&nbsp;|</li>
+                        <li><a href="/Admin/Login"><img src="@Url.Content("~/Content/Admin/images/logout.png")" width="16" height="16" border="0" align="absmiddle">&nbsp;&nbsp;Logout</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <nav>
+            <ul id="qm0" class="qmmc">
+                <li><a href="/Admin/dashboard" class=@(ViewBag.active=="dashboard"?"qmactive":"")>Dashboard</a></li>
+                <li>
+                    <a href="#"  class=@(ViewBag.active=="destination"?"qmactive":"")>Package</a>
+                    <ul>
+                        <li><a href="/Admin/destination">Add Destination</a></li>
+                        <li><a href="/Admin/tour">Add Tour</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Admin/Hotpackage" class=@(ViewBag.active== "Hotpackage" ? "qmactive":"")>Hot Package</a></li>
+                <li><a href="/Admin/touristFeedback" class=@(ViewBag.active== "touristFeedback" ? "qmactive":"")>TouristFeedback</a></li>
+                <li><a href="/Admin/Indexenquiry" class=@(ViewBag.active== "Indexenquiry" ? "qmactive":"")>Indexenquiry</a></li>
+                <li><a href="/Admin/ContactusEnquiry" class=@(ViewBag.active== "ContactusEnquiry" ? "qmactive":"")>ContactusEnquiry</a></li>
+            </ul>
+        </nav>
+        @RenderBody()
+        
+            <footer class="whitefoter">
+                <div class="whitefooter-cont">
+                    <div style="float:left;">
+                        Copyright &copy; 2019 Star India Holiday
+                        All Rights Reserved.
+                    </div>
+                    <a target="_blank" href="http://www.aks-india.com/" style="float:right;"> <img src="@Url.Content("~/Content/Admin/images/akslogo.jpg")" alt="AKS Websoft Consulting Pvt. Ltd." title="AKS Websoft Consulting Pvt. Ltd."></a>
+                    <div class="clear"></div>
+                </div>
+            </footer>
+    </div>
+</body>
+</html>

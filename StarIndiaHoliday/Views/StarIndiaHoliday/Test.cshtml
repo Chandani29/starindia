@@ -1,0 +1,36 @@
+﻿@model List<StarIndiaHoliday.Models.Destination>
+@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_LayoutStarIndiaHoliday.cshtml";
+}
+Domestic
+<ul>
+   
+
+@foreach (var item in Model)
+{
+    if(item.categoryName == "International")
+    {
+
+    
+
+    <li>@item.categoryName @item.destination</li>
+    }
+
+
+
+
+
+}
+    
+
+</ul>
+
+@*<ul>
+    @for (int i = 3; i <= 3 * 12; i = i + 3)
+    {
+
+        <li>@i</li>
+    }
+        </ul>
+*@

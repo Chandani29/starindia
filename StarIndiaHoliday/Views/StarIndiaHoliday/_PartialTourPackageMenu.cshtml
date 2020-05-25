@@ -1,0 +1,46 @@
+﻿@model StarIndiaHoliday.Models.TourPackageMenu
+<ul style="display: block;">
+    <li>
+        <a href="/tour/domestic-tour">Domestic Tour</a>
+        <ul>
+            @foreach (var item in Model.objdestination.Where(x => x.categoryName.Contains("Domestic")))
+            {
+                <li><a href="/tour/domestic-tour/@item.destination.Replace(" ","-")">@item.destination</a></li>
+                @*<li><a href="#">@item.destination</a></li>*@
+            }
+        </ul>
+    </li>
+    <li>
+        <a href="/tour/international-tour"> International Tour </a>
+        <ul>
+            @foreach (var item in Model.objdestination.Where(x => x.categoryName.Contains("International")))
+            {
+
+                <li><a href="/tour/international-tour/@item.destination.Replace(" ","-")">@item.destination</a></li>
+                @*<li><a href="#">@item.destination</a></li>*@
+            }
+        </ul>
+
+    </li>
+
+
+
+</ul>
+
+
+
+
+
+
+@*<ul>
+    <li>
+        <a href="#">Domestic Tours</a>
+        <ul>
+            <li><a href="#">Agra Tour</a></li>
+            <li><a href="#">Shimla Tour</a></li>
+            <li><a href="#"> Kasmir Tour</a></li>
+            <li><a href="#"> Gwaliar Tour</a></li>
+        </ul>
+    </li>
+    <li><a href="#">International Tours</a></li>
+</ul>*@

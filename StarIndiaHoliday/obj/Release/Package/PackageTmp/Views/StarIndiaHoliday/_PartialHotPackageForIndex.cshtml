@@ -1,0 +1,47 @@
+﻿@model List<StarIndiaHoliday.Models.Hotpackage>
+@foreach (var item in Model)
+{
+    <div class="item">
+        <div class="col-sm-12">
+            <div class="card3">
+                <div class="card3-img-top">
+                  @if (item.photo1 != "")
+                  {
+                    <img src="~/Content/uploadImage/largeImage/@item.photo1" alt="Card image">
+                  }
+                  else
+                  {
+                    <img src="@Url.Content("~/Content/Starindiaholiday/images/no_image.png")" alt="Card image">
+                  }
+
+                </div>
+                <div class="card3-body">
+                    <div class="crd-in">
+                        <div class="col-md-8 col-sm-12">
+
+                            <h4 class="card3-title"><i class="fa fa-map-marker fa-1x"></i> &nbsp; @item.PackageName  </h4>
+                            <div class="card3-text">
+                                <h6>@item.Duration</h6>
+                                @*<div class="hot-tour-icon"> <a href="" data-toggle="tooltip" data-placement="top" title="Hotels"> <i class="fa fa-bed"></i></a></div>
+                                    <div class="hot-tour-icon"> <a href="" data-toggle="tooltip" data-placement="top" title=" Houseboat"><i class="fa fa-ship"></i></a></div>
+                                    <div class="hot-tour-icon"> <a href="" data-toggle="tooltip" data-placement="top" title="Transfer"> <i class="fa fa-car"></i></a></div>
+                                    <div class="hot-tour-icon"> <a href="" data-toggle="tooltip" data-placement="top" title=" Meals"> <i class="fa fa-cutlery"></i></a></div>*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crd-in">
+                        <div class="col-md-4 col-sm-12">
+
+                            <span> <p class="from"> from</p><i class="fa fa-inr"></i> <b>@Convert.ToInt32(item.PackageCost).ToString("#,##0")</b> </span>
+                            <a href="/hotPackage/@item.id" class="btn read4">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+

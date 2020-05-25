@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90F3ED8E-71B3-476A-83B6-3F3DB6C62CA1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StarIndiaHoliday</RootNamespace>
+    <AssemblyName>StarIndiaHoliday</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Admin\css\jquery-1.11.1.min.js" />
+    <Content Include="Content\Admin\css\pop-up.css" />
+    <Content Include="Content\Admin\css\style.css" />
+    <Content Include="Content\Admin\css\style_invoice.css" />
+    <Content Include="Content\Admin\images\add-more.png" />
+    <Content Include="Content\Admin\images\akslogo.jpg" />
+    <Content Include="Content\Admin\images\bag-3.jpg" />
+    <Content Include="Content\Admin\images\brand-logo.jpg" />
+    <Content Include="Content\Admin\images\buttton-bg-on.jpg" />
+    <Content Include="Content\Admin\images\buttton-bg.jpg" />
+    <Content Include="Content\Admin\images\error.png" />
+    <Content Include="Content\Admin\images\footr-bor.jpg" />
+    <Content Include="Content\Admin\images\hdr-rep.png" />
+    <Content Include="Content\Admin\images\icon-bin.jpg" />
+    <Content Include="Content\Admin\images\lock-image.png" />
+    <Content Include="Content\Admin\images\logo.jpg" />
+    <Content Include="Content\Admin\images\logo.png" />
+    <Content Include="Content\Admin\images\logout.png" />
+    <Content Include="Content\Admin\images\mainlock.png" />
+    <Content Include="Content\Admin\images\pattern.jpg" />
+    <Content Include="Content\Admin\images\pattern.png" />
+    <Content Include="Content\Admin\images\phoneicon.jpg" />
+    <Content Include="Content\Admin\images\seaerch-bg.jpg" />
+    <Content Include="Content\Admin\images\search-rep.png" />
+    <Content Include="Content\Admin\images\testi-img.jpg" />
+    <Content Include="Content\Admin\menu\quickmenu0.css" />
+    <Content Include="Content\Admin\menu\quickmenu0.js" />
+    <Content Include="Content\StarIndiaHoliday\carousal\jquery-1.11.3.min.js" />
+    <Content Include="Content\StarIndiaHoliday\carousal\main.js" />
+    <Content Include="Content\StarIndiaHoliday\carousal\owl.carousel.css" />
+    <Content Include="Content\StarIndiaHoliday\carousal\owl.carousel.min.js" />
+    <Content Include="Content\StarIndiaHoliday\carousal\owl.theme.css" />
+    <Content Include="Content\StarIndiaHoliday\css\bootstrap.min.css" />
+    <Content Include="Content\StarIndiaHoliday\css\font-awesome.min.css" />
+    <Content Include="Content\StarIndiaHoliday\css\menu-old.css" />
+    <Content Include="Content\StarIndiaHoliday\css\menu.css" />
+    <Content Include="Content\StarIndiaHoliday\css\nav.css" />
+    <Content Include="Content\StarIndiaHoliday\css\owl.carousel.min.css" />
+    <Content Include="Content\StarIndiaHoliday\css\owl.theme.default.min.css" />
+    <Content Include="Content\StarIndiaHoliday\css\slide.css" />
+    <Content Include="Content\StarIndiaHoliday\css\style.css" />
+    <Content Include="Content\StarIndiaHoliday\font\fontawesome-webfont.svg" />
+    <Content Include="Content\StarIndiaHoliday\font\generator_config.txt" />
+    <Content Include="Content\StarIndiaHoliday\font\Montez-Regular-webfont.svg" />
+    <Content Include="Content\StarIndiaHoliday\font\OpenSans-Light.svg" />
+    <Content Include="Content\StarIndiaHoliday\font\opensans-regular_0.svg" />
+    <Content Include="Content\StarIndiaHoliday\font\opensans-semibold_0.css" />
+    <Content Include="Content\StarIndiaHoliday\font\opensans-semibold_0.svg" />
+    <Content Include="Content\StarIndiaHoliday\font\rupee_foradian-webfont.svg" />
+    <Content Include="Content\StarIndiaHoliday\images\about-img.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\akslogo.png" />
+    <Content Include="Content\StarIndiaHoliday\images\call-icon.png" />
+    <Content Include="Content\StarIndiaHoliday\images\captcha2.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\con-box-bg.png" />
+    <Content Include="Content\StarIndiaHoliday\images\contact-bg.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\email2-icon.png" />
+    <Content Include="Content\StarIndiaHoliday\images\find-img-1.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\find-img-2.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\find-img-3.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\find-img-4.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\find-img-5.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\find-img-6.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\foot-img-1.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\foot-img-2.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\foot-img-3.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\foot-img-4.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\footer-bg.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\heading-bg.png" />
+    <Content Include="Content\StarIndiaHoliday\images\heading-bg2.png" />
+    <Content Include="Content\StarIndiaHoliday\images\hot-tour-bg.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\hot-tour1.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\hotpack-detail.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\hotpack-detail2.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\hotpack-detail3.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\hotpack-img.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\inner-banner.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\inner-banner2.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\inrproimg.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\international1.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\logo.png" />
+    <Content Include="Content\StarIndiaHoliday\images\mail.png" />
+    <Content Include="Content\StarIndiaHoliday\images\map-marker.png" />
+    <Content Include="Content\StarIndiaHoliday\images\mice-bg.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\nextarrow.png" />
+    <Content Include="Content\StarIndiaHoliday\images\nextarrow2.png" />
+    <Content Include="Content\StarIndiaHoliday\images\no_image.png" />
+    <Content Include="Content\StarIndiaHoliday\images\orrange-icon.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\person_1.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\person_2.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\person_3.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\person_4.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\phone-icon.png" />
+    <Content Include="Content\StarIndiaHoliday\images\phone2-icon.png" />
+    <Content Include="Content\StarIndiaHoliday\images\prevarrow.png" />
+    <Content Include="Content\StarIndiaHoliday\images\prevarrow2.png" />
+    <Content Include="Content\StarIndiaHoliday\images\scroll-top.png" />
+    <Content Include="Content\StarIndiaHoliday\images\slider-3.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\slider-4.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\slider-5.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\slider.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\slider2.jpg" />
+    <Content Include="Content\StarIndiaHoliday\images\testi-bg.jpg" />
+    <Content Include="Content\StarIndiaHoliday\js\bootstrap.min.js" />
+    <Content Include="Content\StarIndiaHoliday\js\index.html" />
+    <Content Include="Content\StarIndiaHoliday\js\index.js" />
+    <Content Include="Content\StarIndiaHoliday\js\jquery-1.9.0.min.js" />
+    <Content Include="Content\StarIndiaHoliday\js\jquery.flexisel.js" />
+    <Content Include="Content\StarIndiaHoliday\js\jquery.min.js" />
+    <Content Include="Content\StarIndiaHoliday\js\jquery.nivo.slider.js" />
+    <Content Include="Content\StarIndiaHoliday\js\jquery1.7.1.min.js" />
+    <Content Include="Content\StarIndiaHoliday\js\navAccordion.js" />
+    <Content Include="Content\StarIndiaHoliday\js\navAccordion.min.js" />
+    <Content Include="Content\StarIndiaHoliday\js\owl.carousel.min.js" />
+    <Content Include="Content\StarIndiaHoliday\js\script.js" />
+    <Content Include="Content\StarIndiaHoliday\js\scroll.js" />
+    <Content Include="Content\StarIndiaHoliday\js\slide3-js.js" />
+    <Content Include="Content\StarIndiaHoliday\js\wow.min.js" />
+    <Content Include="emailTemplates\enquiry.html" />
+    <Content Include="emailTemplates\enquiryfortour.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\StarIndiaHolidayController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Captcha.cs" />
+    <Compile Include="Models\CaptchaResult.cs" />
+    <Compile Include="Models\ChangePassword.cs" />
+    <Compile Include="Models\contactus.cs" />
+    <Compile Include="Models\ContactusEnquiry.cs" />
+    <Compile Include="Models\DataLayer.cs" />
+    <Compile Include="Models\Destination.cs" />
+    <Compile Include="Models\Hotpackage.cs" />
+    <Compile Include="Models\ImageUpload.cs" />
+    <Compile Include="Models\Indexenquiry.cs" />
+    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\Testimonial.cs" />
+    <Compile Include="Models\Tour.cs" />
+    <Compile Include="Models\touristFeedback.cs" />
+    <Compile Include="Models\TourPackageMenu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Admin\dashboard.cshtml" />
+    <Content Include="Views\Admin\ChangePassword.cshtml" />
+    <Content Include="Views\Admin\Login.cshtml" />
+    <Content Include="Views\Admin\Category.cshtml" />
+    <Content Include="Views\Admin\destination.cshtml" />
+    <Content Include="Views\Admin\_Partialdestination.cshtml" />
+    <Content Include="Views\Admin\tour.cshtml" />
+    <Content Include="Views\Admin\_PartialTour.cshtml" />
+    <Content Include="Views\Shared\_LayoutStarIndiaHoliday.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\Index.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\_PartialTourPackageMenu.cshtml" />
+    <Content Include="Content\Admin\images\Thumbs.db" />
+    <Content Include="Content\StarIndiaHoliday\css\index.php" />
+    <Content Include="Content\StarIndiaHoliday\font\baroquescript-webfont.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\baroquescript-webfont.woff2" />
+    <Content Include="Content\StarIndiaHoliday\font\fontawesome-webfont.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\fontawesome-webfont.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\fontawesome-webfont.woff2" />
+    <Content Include="Content\StarIndiaHoliday\font\FontAwesome.otf" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Light.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Light.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Light.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Light.woff2" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Regular.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Regular.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Regular.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Regular.woff2" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Semibold.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Semibold.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Semibold.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-Semibold.woff2" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-SemiboldItalic.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-SemiboldItalic.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-SemiboldItalic.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\Lato-SemiboldItalic.woff2" />
+    <Content Include="Content\StarIndiaHoliday\font\Montez-Regular-webfont.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\Montez-Regular-webfont.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\Montez-Regular-webfont.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\OpenSans-Light.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\OpenSans-Light.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\OpenSans-Light.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\opensans-regular_0.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\opensans-regular_0.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\opensans-regular_0.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\opensans-semibold_0.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\opensans-semibold_0.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\opensans-semibold_0.woff" />
+    <Content Include="Content\StarIndiaHoliday\font\rupee_foradian-webfont.eot" />
+    <Content Include="Content\StarIndiaHoliday\font\rupee_foradian-webfont.ttf" />
+    <Content Include="Content\StarIndiaHoliday\font\rupee_foradian-webfont.woff" />
+    <Content Include="Views\StarIndiaHoliday\tour.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\_PartialLeftMenu.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\aboutus.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\contactus.cshtml" />
+    <None Include="Properties\PublishProfiles\Starindia.pubxml" />
+    <Content Include="Views\StarIndiaHoliday\_PartialIndexEnquiry.cshtml" />
+    <Content Include="Views\Admin\Hotpackage.cshtml" />
+    <Content Include="Views\Admin\_PartialHotpackage.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\_PartialHotPackageMenu.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\Hotpackage.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\_PartialHotPackageForIndex.cshtml" />
+    <Content Include="Views\Admin\_PartialtouristFeedback.cshtml" />
+    <Content Include="Views\Admin\touristFeedback.cshtml" />
+    <Content Include="Views\Admin\Indexenquiry.cshtml" />
+    <Content Include="Views\Admin\contactusenquiry.cshtml" />
+    <Content Include="Views\Admin\Testimonial.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\_PartialTouristFeedback.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\TermsCondtion.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\Disclaimer.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\Test.cshtml" />
+    <Content Include="Views\StarIndiaHoliday\TestSelfPractice.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="ckeditor\" />
+    <Folder Include="Content\Admin\uploadImage\" />
+    <Folder Include="Content\StarIndiaHoliday\js\carousal\" />
+    <Folder Include="Content\uploadImage\largeImage\" />
+    <Folder Include="Content\uploadImage\smallImage\" />
+    <Folder Include="Views\Admin\Home\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56981</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56981/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

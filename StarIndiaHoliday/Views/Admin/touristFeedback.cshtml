@@ -1,0 +1,146 @@
+﻿@model StarIndiaHoliday.Models.touristFeedback
+@{
+    ViewBag.Title = "touristFeedback";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div id="wrap">
+    <div class="clear" style="height:5px;"></div>
+    @using (Html.BeginForm("touristFeedback", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.ValidationSummary(true)
+        <div id="wrap2">
+            <h1>Tourist Feedback</h1>
+            <span style="color:green;">@ViewBag.Success @TempData["msg"]</span>
+            <span style="color:red;">@ViewBag.Error</span>
+            <br>
+
+            <div class="form-raw">
+                <div class="form-name">Name</div>
+                <div class="form-txtfld">
+                    @Html.TextBoxFor(model => model.name)
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="form-raw">
+                <div class="form-name">Mobile Number</div>
+                <div class="form-txtfld">
+                    @Html.TextBoxFor(model => model.mobileNumber, new { @class = "allownumericwithoutdecimal" })
+                </div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="form-raw">
+                <div class="form-name">Designation</div>
+                <div class="form-txtfld">
+                    @Html.TextBoxFor(model => model.designatin)
+
+                </div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="form-raw">
+                <div class="form-name">Short Description</div>
+                <div class="form-txtfld">
+                    @*<textarea style="width:400px; height:150px;"></textarea>*@
+                    @*<strong>Maximum 60 Charactor Allowed</strong><br>*@
+
+                    @Html.TextAreaFor(model => model.shortDescription, new
+               { @style = "width:400px; height:150px;", @maxlength = 120 })
+                    <strong>Maximum 120 Charactor Allowed</strong><br>
+
+
+
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="form-raw">
+                <div class="form-name">Tourist Image</div>
+                <div class="form-txtfld">
+                    @*<input type="file">*@
+
+                    <input type="hidden" id="imageName" name="imageName" value="@ViewBag.imageName" />
+                    @if (ViewBag.btn == "Update")
+                {
+                        <input type="file" multiple="multiple" name="files[0]" id="files_1" accept=".jpg,.jpeg,.gif,.png" />@ViewBag.imageName
+
+
+                    }
+                    else
+                    {
+
+                        @Html.TextBoxFor(Model => Model.file1, new { type = "file", id = "file1", accept = ".jpg,.jpeg,.gif,.png" })
+
+                    }
+                    <div class="form-name"> Image Size ( Width=90px, Height=90px ) (Tourist Image)</div>
+
+                    @*<div class="clear"></div>
+                        <strong style="margin: 5px 0px">Image Size ( width: 280px, height: 351px )</strong>*@<div class="clear"></div>
+                    <strong style="margin: 5px 0px"></strong>
+
+                </div>
+            </div>
+
+
+            <div class="clear"></div>
+            <div class="form-raw">
+                <div class="form-name">Status</div>
+                <div class="form-txtfld">
+                    @Html.CheckBoxFor(model => model.status, new { @checked = "checked" })
+                    (Active/Inactive)
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="form-raw">
+                <div class="form-name">&nbsp;</div>
+                <div class="form-txtfld">
+
+                    @if (ViewBag.btn == "Update")
+                {
+                        <input type="submit" value="Update" class="btn" name="cmd">
+                    }
+                    else
+                    {
+                        <input type="submit" value="Submit" class="btn" name="cmd" />
+                    }
+                </div>
+            </div>
+        </div>
+    }
+    <div class="clear">&nbsp;</div>
+</div>
+<div id="wrap3">
+    <div id="wrap4"> 
+        @{Html.RenderAction("_PartialTouristFeedback");}
+    </div>
+    <div class="clear">&nbsp;</div>
+</div>
+<script>
+    //Event  that accept only numeric start
+    $(".allownumericwithoutdecimal").on("keypress keyup blur", function (event) {
+
+        $(this).val($(this).val().replace(/[^\d].+/, ""));
+        if (event.which == 13) {
+            return;
+        }
+        if ((event.which < 48 || event.which > 57)) {
+            event.preventDefault();
+        }
+    });
+    //Event that accept only numeric end
+</script>
+
+
+
+

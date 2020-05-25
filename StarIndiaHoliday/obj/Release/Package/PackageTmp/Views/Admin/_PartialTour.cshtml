@@ -1,0 +1,42 @@
+﻿
+@model List<StarIndiaHoliday.Models.Tour>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="admintable">
+    <tr>
+        <th width="45" align="left" valign="middle">Sr.No.</th>
+        <th width="73" align="left" valign="middle">Category</th>
+        <th width="75" align="left" valign="middle">Destination</th>
+        <th width="62" align="left" valign="middle">Tour Name</th>
+        <th width="67" align="left" valign="middle">Short Discription</th>
+        <th width="55" align="left" valign="middle">Facility</th>
+        <th width="77" align="left" valign="middle">Price</th>
+        <th width="113" align="left" valign="middle">Photo1</th>
+        <th width="113" align="left" valign="middle">Photo2</th>
+
+        <th width="49" align="left" valign="middle">Status</th>
+        <th width="49" align="left" valign="middle">Set as home page</th>
+        <th width="35" align="left" valign="middle">Edit</th>
+        <th width="68" align="left" valign="middle">Remove</th>
+    </tr>
+@{int i = 0;}
+
+@foreach (var item in Model)
+{
+    i = i + 1;
+    <tr>
+        <td align="left" valign="top">@i.ToString()</td>
+        <td align="left" valign="top">@item.categoryName</td>
+        <td align="left" valign="top">@item.destination</td>
+        <td align="left" valign="top">@item.tourName</td>
+        <td align="left" valign="top">@(item.shortDescription.ToString().Length > 60 ? item.shortDescription.Substring(0, 59) : item.shortDescription)</td>
+        <td align="left" valign="top">@item.facility</td>
+        <td align="left" valign="top">@item.price</td>
+        <td align="left" valign="top"><img src="~/Content/uploadImage/smallImage/@item.imageName"></td>
+        <td align="left" valign="top"><strong>@(item.status == true ? @Html.Raw("<span style='color:green;'>Active</span>") : @Html.Raw("<span style='color:red;'>Inactive</span>"))</strong></td>
+        <td align="left" valign="top"><strong>@(item.setAsHomePage == true ? @Html.Raw("<span style='color:green;'>Yes</span>") : @Html.Raw("<span style='color:red;'>No</span>"))</strong></td>
+        <td align="left" valign="top"><a href="~/Admin/tour/@item.id?command=ed">Edit</a></td>
+        <td valign="top"><a href="~/Admin/tour/@item.id?command=del"
+          onclick="return confirm('Are you sure you wish to delete this Record?');"><img src="@Url.Content("~/Content/Admin/images/icon-bin.jpg")" alt="" style="border:none" align="absmiddle" /></a></td>
+    </tr>
+}
+</table>

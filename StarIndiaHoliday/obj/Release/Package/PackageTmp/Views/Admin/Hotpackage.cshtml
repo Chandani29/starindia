@@ -1,0 +1,195 @@
+﻿@model StarIndiaHoliday.Models.Hotpackage
+@{
+    ViewBag.Title = "Hotpackage";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div id="wrap">
+    <div class="clear" style="height:5px;"></div>
+@using (Html.BeginForm("Hotpackage", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationSummary(true)
+    <div id="wrap">
+        <h1>Hot Package</h1>
+        <span style="color:green;">@ViewBag.Success @TempData["msg"]</span>
+        <span style="color:red;">@ViewBag.Error</span>
+        <br>
+
+        <div class="form-raw">
+            <div class="form-name">Package Name</div>
+            <div class="form-txtfld">
+                @*<input type="text">
+                <span class="req-field">required field</span>*@
+                @Html.TextBoxFor(model => model.PackageName, new { @id = "PackageName" })
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="form-raw">
+            <div class="form-name">Duration</div>
+            <div class="form-txtfld">
+                @Html.TextBoxFor(model => model.Duration, new { @id = "Duration" })
+                @*<input type="text">
+                <span class="req-field">required field</span>*@
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-raw">
+            <div class="form-name">Short Description</div>
+            <div class="form-txtfld">
+               @Html.TextAreaFor(model => model.ShortDescription, new { @id = "ShortDescription" })
+                @*<textarea></textarea>*@
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="clear"></div>
+
+        <div class="form-raw" style="width: 100%;">
+            <div class="form-name">Details</div>
+            <div class="form-txtfld" style="width: 100%; margin: 15px;">
+               
+                 @Html.TextAreaFor(model => model.Details, new { @class = "ckeditor", @id = "editor1", @name = "editor1", @style = "width:width:100%; height:350px;" })
+                <span style="color:Red;display:none;" id="dis1">Enter Details</span>
+                @*<textarea style="width:100%; height:350px;">FCK</textarea>*@
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-raw" style="width: 100%;">
+            <div class="form-name">Terms & Conditions</div>
+            <div class="form-txtfld" style="width: 100%; margin: 15px;">
+                @*<textarea style="width:100%; height:350px;">FCK</textarea>*@
+                    @Html.TextAreaFor(model => model.TermsConditions, new { @class = "ckeditor", @id = "editor2", @name = "editor2", @style = "width:100%; height:350px;", })
+                    
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div>
+
+        </div>
+
+        <div class="form-raw">
+            <div class="form-name">Package Cost</div>
+            <div class="form-txtfld">
+                @*<input type="text">
+                <span class="req-field">required field</spa*@@*n>*@
+                @Html.TextBoxFor(model => model.PackageCost, new { @id = "PackageCost",@class = "allownumericwithoutdecimal", @maxlength = "6" })
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-raw">
+            <div class="form-name">Package Image 1</div>
+            <div class="form-txtfld">
+                @*<input type="file">*@
+                <input type="hidden" id="photo1" name="photo1" value="@ViewBag.photo1" />
+                @if (ViewBag.btn == "Update")
+                {
+                    <input type="file" multiple="multiple" name="files[0]" id="files_1" accept=".jpg,.jpeg,.gif,.png" />@ViewBag.photo1
+
+
+                }
+                else
+                {
+
+                    @Html.TextBoxFor(Model => Model.file1, new { type = "file", id = "file1", accept = ".jpg,.jpeg,.gif,.png" })
+
+                }
+
+                <div class="clear"></div>
+                <strong style="margin: 5px 0px">Image Size ( width: 533px, height: 450px )</strong>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="form-raw">
+            <div class="form-name">Package Image 2</div>
+            <div class="form-txtfld">
+                @*<input type="file">*@
+                <input type="hidden" id="photo2" name="photo2" value="@ViewBag.photo2" />
+                @if (ViewBag.btn == "Update")
+                {
+                    <input type="file" multiple="multiple" name="files[1]" id="files_2" accept=".jpg,.jpeg,.gif,.png" />@ViewBag.photo2
+
+
+                }
+                else
+                {
+
+                    @Html.TextBoxFor(Model => Model.file2, new { type = "file", id = "file2", accept = ".jpg,.jpeg,.gif,.png" })
+
+                }
+
+                <div class="clear"></div>
+                <strong style="margin: 5px 0px">Image Size ( width: 533px, height: 450px )</strong>
+            </div>
+        </div>
+
+
+        <div class="clear"></div>
+        <div class="form-raw">
+            <div class="form-name">Status</div>
+            <div class="form-txtfld">
+                @*<input type="checkbox">*@
+                @Html.CheckBoxFor(model => model.Status, new { @checked = "checked" })
+                (Active/Inactive)
+                @*Status(Active/Inactive)*@
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+
+                 <div class="form-raw">
+                 <div class="form-name">&nbsp;</div>
+                <div class="form-txtfld">
+                @*<input type="button" class="btn" value="Submit">*@
+                @if (ViewBag.btn == "Update")
+                {
+                    <input type="submit" value="Update" class="btn" name="cmd" onclick="return validate();">
+                }
+                else
+                {
+                    <input type="submit" value="Submit" class="btn" name="cmd" onclick="return validate();" />
+                }
+            </div>
+        </div>
+    </div>
+}
+    <div class="clear">&nbsp;</div>
+</div>
+<div id="wrap3">
+    @{Html.RenderAction("_PartialHotpackage");}
+    <div class="clear">&nbsp;</div>
+</div>
+<div class="clear"></div>
+
+<script>
+    
+    function validate() {
+        if (CKEDITOR.instances.editor1.getData() != '') {
+
+            $("#dis1").hide();
+
+        }
+        
+        if ($("#PackageName").val() != "" && $("#PackageCost").val() != ""
+            && CKEDITOR.instances.editor1.getData() == '') {
+            $("#dis1").show();
+            return false;
+        }
+        
+    }
+
+    //Event  that accept only numeric start
+    $(".allownumericwithoutdecimal").on("keypress keyup blur", function (event) {
+
+        $(this).val($(this).val().replace(/[^\d].+/, ""));
+        if (event.which == 13) {
+            return;
+        }
+        if ((event.which < 48 || event.which > 57)) {
+            event.preventDefault();
+        }
+    });
+    //Event that accept only numeric end
+</script>
